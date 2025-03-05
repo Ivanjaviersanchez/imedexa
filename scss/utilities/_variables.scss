@@ -1,0 +1,10 @@
+/*    PALETA DE COLORES VARIBLES    */
+$color-1: white;
+$color-2: rgb(210, 217, 232);
+$color-3: rgb(184, 246, 231);
+
+/*----------------MIXIN SASS-----------*/
+@mixin tamanio ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}

@@ -1,0 +1,62 @@
+/*--------------ESTILOS DEL HEADER---------------*/
+.header {
+    @include tamanio(100%,auto);
+    
+    border: 1px black solid;
+    margin: 0;
+    padding: 0;
+    nav {
+        @include tamanio(100%,auto);
+        
+        padding-left: 1em;
+        padding-right: 1em;
+        background-color: white;
+
+        a {
+           /*  padding-right: 5em;  */
+            padding-right: 2em;
+            padding-left: 3em;
+        }
+        
+        div {
+            padding-left: 10em;
+        }
+    }
+
+    
+
+
+}
+
+/*--------------ESTILOS DEL FOOTER---------------*/
+footer {
+    @include tamanio(100%,auto);
+    border: 1px black solid;
+    margin: 0;
+    padding: 0;
+   /*  @include tamanio(100%,8vh);
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0; 
+    background-color: $color-2;
+    list-style-type: none;
+    padding: 2vh;
+    justify-content: space-around;
+    
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 2px;
+    a {
+        @include tamanio(100%,4vh);
+        text-align: center;
+        
+    }
+    a:active {
+        color: $color-4;
+    }
+    a:hover{
+        border: solid 3px $color-4;
+       
+    } */
+}

@@ -1,0 +1,198 @@
+/*    PALETA DE COLORES VARIBLES    */
+/*----------------MIXIN SASS-----------*/
+/*-----------------ESTILOS GENERALES----------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: white;
+  min-height: 100vh;
+  /* Fonts del body */
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2, h3 {
+  text-align: left;
+  /* background-color: rgb(44, 45, 45); */
+  color: rgb(184, 246, 231);
+  font-size: 1.2em;
+  /* Fonts de los h2*/
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-size: 1em;
+}
+
+button {
+  color: rgb(184, 246, 231);
+  background-color: rgb(210, 217, 232);
+  /* Fonts de los botones*/
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  color: rgb(184, 246, 231);
+  text-decoration: none; /*quita subrrayado*/
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ESTILOS DEL CONTENDOR */
+.container-fluid {
+  padding: 1vh;
+  flex-grow: 1; /*el contenedor ocupe todo el espacio disponible */
+}
+
+.row {
+  flex: 1;
+  margin: 0;
+}
+
+.margin-contenido {
+  margin-top: 22vh;
+}
+
+/*--------------ESTILOS DEL HEADER---------------*/
+.header {
+  width: 100%;
+  height: auto;
+  border: 1px black solid;
+  margin: 0;
+  padding: 0;
+}
+.header nav {
+  width: 100%;
+  height: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: white;
+}
+.header nav a {
+  /*  padding-right: 5em;  */
+  padding-right: 2em;
+  padding-left: 3em;
+}
+.header nav div {
+  padding-left: 10em;
+}
+
+/*--------------ESTILOS DEL FOOTER---------------*/
+footer {
+  width: 100%;
+  height: auto;
+  border: 1px black solid;
+  margin: 0;
+  padding: 0;
+  /*  @include tamanio(100%,8vh);
+   display: flex;
+   flex-direction: row;
+   flex-shrink: 0; 
+   background-color: $color-2;
+   list-style-type: none;
+   padding: 2vh;
+   justify-content: space-around;
+
+   font-family: "New Amsterdam", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   margin: 2px;
+   a {
+       @include tamanio(100%,4vh);
+       text-align: center;
+
+   }
+   a:active {
+       color: $color-4;
+   }
+   a:hover{
+       border: solid 3px $color-4;
+
+   } */
+}
+
+/*--------------ESTILOS SECCION SOMOS---------------*/
+.seccion-somos {
+  width: 100%;
+  height: auto;
+  border: 1px black solid;
+  display: flex; /* Activamos flexbox para que los elementos se adapten */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.seccion-somos img .position-fondo {
+  position: relative;
+  display: inline-block;
+}
+.seccion-somos img .position-circle {
+  position: relative;
+}
+.seccion-somos div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+}
+
+/*--------------ESTILOS SECCION CARDS DE INFORMACION---------------*/
+.seccion-cards-info {
+  width: 100%;
+  height: auto;
+  border: 1px black solid;
+}
+.seccion-cards-info .alineado-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*--------------ESTILOS SECCION PRESENCIA/MAPA---------------*/
+.seccion-presencia-mapa {
+  width: 100%;
+  height: auto;
+  border: 1px black solid;
+}
+/*--------------ESTILOS SECCION SERVICIO/CONOCE---------------*/
+.seccion-servicio-conoce {
+  width: 100%;
+  height: auto;
+  border: 1px black solid;
+}
+/*--------------ESTILOS SECCION PROYECTOS DESTACADOS---------------*/
+/*--------------ESTILOS SECCION PODEMOS AYUDARTE---------------*/
+/*--------------ESTILOS SECCION---------------*/
+
+/*# sourceMappingURL=styles.css.map */

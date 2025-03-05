@@ -1,0 +1,116 @@
+/*--------------ESTILOS SECCION SOMOS---------------*/
+.seccion-somos {
+    @include tamanio(100%,auto);
+    border: 1px black solid;
+    display: flex;               /* Activamos flexbox para que los elementos se adapten */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+    margin: 0;
+    padding: 0;
+    
+    img {
+        .position-fondo{
+          position: relative;
+          display: inline-block;
+        }  
+        .position-circle {
+          position: relative;
+        }
+      }
+    div {
+        @include tamanio(100%,auto);
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content: center;
+        position: absolute;
+        
+    }
+}
+
+/*--------------ESTILOS SECCION CARDS DE INFORMACION---------------*/
+.seccion-cards-info {
+    @include tamanio(100%,auto);
+    border: 1px black solid; 
+    .alineado-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+    }
+}
+
+/*--------------ESTILOS SECCION PRESENCIA/MAPA---------------*/
+.seccion-presencia-mapa {
+    @include tamanio(100%,auto);
+    border: 1px black solid;
+    .presencia-global{
+        h2 {
+
+        }
+        p {
+
+        }
+        img {
+
+        }
+
+    }
+
+    .empleados-proyecto{
+        .empleados {
+            h3 {
+
+            }
+            p {
+                
+            }
+        }
+        .proyectos {
+            h3 {
+
+            }
+            p {
+
+            }
+            button {
+
+            }
+        }
+    }
+}
+
+
+/*--------------ESTILOS SECCION SERVICIO/CONOCE---------------*/
+.seccion-servicio-conoce {
+    @include tamanio(100%,auto);
+    border: 1px black solid;
+    .estilos-servicio {
+        
+
+    }
+    
+    .estilos-conoce {
+    
+    }
+}
+.seccion-tres-torres {
+
+}
+
+
+/*--------------ESTILOS SECCION PROYECTOS DESTACADOS---------------*/
+.seccion-proyectos-destacados {
+
+
+}
+
+/*--------------ESTILOS SECCION PODEMOS AYUDARTE---------------*/
+.seccion-podemos-ayudarte {
+
+
+}
+
+/*--------------ESTILOS SECCION---------------*/
