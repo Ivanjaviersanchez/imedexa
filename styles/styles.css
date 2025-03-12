@@ -141,36 +141,53 @@ footer {
   width: 100%;
   height: auto;
   border: 1px black solid;
-  display: flex; /* Activamos flexbox para que los elementos se adapten */
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-.seccion-somos img .position-fondo {
   position: relative;
-  display: inline-block;
+  background-image: url(/assets/elementos-home/Imagen-somos-conductores.png);
+  background-size: cover;
+  background-position: center;
+  /* overflow: hidden; */
 }
-.seccion-somos img .position-circle {
-  position: relative;
-}
-.seccion-somos div {
+.seccion-somos .card-body {
   width: 100%;
-  height: auto;
+  height: 70vh;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  position: absolute;
+  justify-content: center; /* Asegura que el contenido se alinee verticalmente */
+  /* Centra el contenido horizontalmente */
+  text-align: left;
+  color: white;
+}
+.seccion-somos .card-body a {
+  width: 20vh;
+  height: auto;
+  text-align: center;
+}
+.seccion-somos img {
+  width: 100%;
+  height: auto;
+  /* @include tamanio(100%,70vh);
+  padding-top: 55vh; */
 }
 
+/* .seccion-somos::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3vh;
+    background: green;
+    border-radius: 50% ;
+} */
 /*--------------ESTILOS SECCION CARDS DE INFORMACION---------------*/
 .seccion-cards-info {
   width: 100%;
   height: auto;
   border: 1px black solid;
+}
+.seccion-cards-info h2 {
+  color: black;
+  text-align: center;
 }
 .seccion-cards-info .alineado-cards {
   display: flex;
@@ -178,12 +195,38 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.seccion-cards-info .alineado-cards img {
+  width: auto;
+  height: 13vh;
+}
+.seccion-cards-info .alineado-cards h3 {
+  color: black;
+}
+.seccion-cards-info .alineado-cards p {
+  color: black;
+}
 
 /*--------------ESTILOS SECCION PRESENCIA/MAPA---------------*/
 .seccion-presencia-mapa {
   width: 100%;
   height: auto;
   border: 1px black solid;
+}
+.seccion-presencia-mapa .presencia-global {
+  text-align: center;
+}
+.seccion-presencia-mapa .presencia-global h2 {
+  color: black;
+  text-align: center;
+}
+.seccion-presencia-mapa .presencia-global p {
+  color: black;
+}
+.seccion-presencia-mapa .presencia-proyectos .presencia h3 {
+  color: black;
+}
+.seccion-presencia-mapa .presencia-proyectos .proyectos h3 {
+  color: black;
 }
 /*--------------ESTILOS SECCION SERVICIO/CONOCE---------------*/
 .seccion-servicio-conoce {

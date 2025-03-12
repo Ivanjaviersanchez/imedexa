@@ -1,44 +1,70 @@
 /*--------------ESTILOS SECCION SOMOS---------------*/
 .seccion-somos {
     @include tamanio(100%,auto);
-    border: 1px black solid;
-    display: flex;               /* Activamos flexbox para que los elementos se adapten */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden; 
-    margin: 0;
-    padding: 0;
-    
-    img {
-        .position-fondo{
-          position: relative;
-          display: inline-block;
-        }  
-        .position-circle {
-          position: relative;
-        }
-      }
-    div {
-        @include tamanio(100%,auto);
+    border: 1px black solid; 
+    position: relative;
+    background-image: url(/assets/elementos-home/Imagen-somos-conductores.png);
+    background-size: cover;
+    background-position: center;
+    /* overflow: hidden; */
+
+    .card-body {
+        @include tamanio(100%,70vh);
         display: flex;
         flex-direction: column;
-        align-items:flex-start;
-        justify-content: center;
-        position: absolute;
-        
+        justify-content: center;  /* Asegura que el contenido se alinee verticalmente */
+        text-align: left;
+        color: white;
+        h2 {
+          
+        }
+        a {
+            @include tamanio(20vh,auto);
+            text-align: center;
+        }
     }
+
+    img {
+        @include tamanio(100%,auto);
+       
+        /* @include tamanio(100%,70vh);
+        padding-top: 55vh; */
+    }
+    
 }
+/* .seccion-somos::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3vh;
+    background: green;
+    border-radius: 50% ;
+} */
 
 /*--------------ESTILOS SECCION CARDS DE INFORMACION---------------*/
 .seccion-cards-info {
     @include tamanio(100%,auto);
     border: 1px black solid; 
+    h2 {
+        color: black;
+        text-align: center;
+    }
     .alineado-cards {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;  
+        img {
+            @include tamanio(auto,13vh);
+        }
+        h3 {
+            color: black;
+        }
+        p {
+            color: black;
+        }
     }
 }
 
@@ -47,11 +73,14 @@
     @include tamanio(100%,auto);
     border: 1px black solid;
     .presencia-global{
+        text-align: center;
         h2 {
-
+            color: black;
+            text-align: center;
         }
         p {
-
+            color: black;
+            
         }
         img {
 
@@ -59,10 +88,10 @@
 
     }
 
-    .empleados-proyecto{
-        .empleados {
+    .presencia-proyectos{
+        .presencia {
             h3 {
-
+                color: black;
             }
             p {
                 
@@ -70,7 +99,7 @@
         }
         .proyectos {
             h3 {
-
+                color: black;
             }
             p {
 
