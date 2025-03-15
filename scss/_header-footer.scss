@@ -5,6 +5,9 @@
     border: 1px black solid;
     margin: 0;
     padding: 0;
+    .navbar-brand {
+        font-family: 'New Astro', sans-serif;
+    }
     nav {
         @include tamanio(100%,auto);
         

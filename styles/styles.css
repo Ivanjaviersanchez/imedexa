@@ -1,5 +1,12 @@
+@charset "UTF-8";
 /*    PALETA DE COLORES VARIBLES    */
 /*----------------MIXIN SASS-----------*/
+@font-face {
+  font-family: "New Astro";
+  src: url("/assets/fonts/New Astro Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 /*-----------------ESTILOS GENERALES----------------*/
 * {
   margin: 0;
@@ -19,8 +26,6 @@ body {
   height: 100%;
   background-color: white;
   min-height: 100vh;
-  /* Fonts del body */
-  font-family: "Poppins", sans-serif;
   font-weight: 200;
   font-style: normal;
 }
@@ -35,7 +40,6 @@ h2, h3 {
   color: rgb(184, 246, 231);
   font-size: 1.2em;
   /* Fonts de los h2*/
-  font-family: "New Amsterdam", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -74,10 +78,6 @@ img {
   margin: 0;
 }
 
-.margin-contenido {
-  margin-top: 22vh;
-}
-
 /*--------------ESTILOS DEL HEADER---------------*/
 .header {
   width: 100%;
@@ -85,6 +85,9 @@ img {
   border: 1px black solid;
   margin: 0;
   padding: 0;
+}
+.header .navbar-brand {
+  font-family: "New Astro", sans-serif;
 }
 .header nav {
   width: 100%;
@@ -156,11 +159,22 @@ footer {
   /* Centra el contenido horizontalmente */
   text-align: left;
   color: white;
+  padding: 6vh;
+  padding-top: 15vh;
+}
+.seccion-somos .card-body h1 {
+  font-size: 38px;
+  font-family: "New Astro", sans-serif;
+}
+.seccion-somos .card-body p {
+  font-size: 22px;
 }
 .seccion-somos .card-body a {
-  width: 20vh;
+  width: 30vh;
   height: auto;
   text-align: center;
+  font-size: 22px;
+  background-color: #D7BE0F;
 }
 .seccion-somos img {
   width: 100%;
@@ -169,16 +183,6 @@ footer {
   padding-top: 55vh; */
 }
 
-/* .seccion-somos::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3vh;
-    background: green;
-    border-radius: 50% ;
-} */
 /*--------------ESTILOS SECCION CARDS DE INFORMACION---------------*/
 .seccion-cards-info {
   width: 100%;
@@ -188,6 +192,10 @@ footer {
 .seccion-cards-info h2 {
   color: black;
   text-align: center;
+  font-size: 38px;
+  font-family: "New Astro", sans-serif;
+  padding-left: 20vh;
+  padding-right: 20vh;
 }
 .seccion-cards-info .alineado-cards {
   display: flex;
@@ -201,6 +209,8 @@ footer {
 }
 .seccion-cards-info .alineado-cards h3 {
   color: black;
+  font-size: 20px;
+  font-family: "New Astro", sans-serif;
 }
 .seccion-cards-info .alineado-cards p {
   color: black;
@@ -218,22 +228,78 @@ footer {
 .seccion-presencia-mapa .presencia-global h2 {
   color: black;
   text-align: center;
+  font-size: 44px;
+  font-family: "New Astro", sans-serif;
+  padding-top: 10vh;
 }
 .seccion-presencia-mapa .presencia-global p {
   color: black;
+  font-size: 22px;
+  padding-left: 28%;
+  padding-right: 28%;
+}
+.seccion-presencia-mapa .presencia-global .imagenes-superpuestas {
+  position: relative; /* Esto es importante para que las imágenes se posicionen con respecto a este contenedor */
+  display: inline-block;
+}
+.seccion-presencia-mapa .presencia-global .imagenes-superpuestas img.imagen-base {
+  width: 100%; /* Ajusta el tamaño de la primera imagen según lo necesites */
+}
+.seccion-presencia-mapa .presencia-global .imagenes-superpuestas img.imagen-superpuesta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: auto;
+  opacity: 0.8; /* Puedes ajustar la opacidad para ver mejor ambas imágenes */
 }
 .seccion-presencia-mapa .presencia-proyectos .presencia h3 {
   color: black;
+  font-size: 44px;
+  font-family: "New Astro", sans-serif;
+}
+.seccion-presencia-mapa .presencia-proyectos .presencia p {
+  font-size: 22px;
 }
 .seccion-presencia-mapa .presencia-proyectos .proyectos h3 {
   color: black;
+  font-size: 44px;
+  font-family: "New Astro", sans-serif;
 }
+.seccion-presencia-mapa .presencia-proyectos .proyectos p {
+  font-size: 22px;
+}
+.seccion-presencia-mapa .presencia-proyectos .proyectos button {
+  font-size: 22px;
+}
+
 /*--------------ESTILOS SECCION SERVICIO/CONOCE---------------*/
 .seccion-servicio-conoce {
   width: 100%;
   height: auto;
   border: 1px black solid;
 }
+.seccion-servicio-conoce .estilos-servicio h2 {
+  font-size: 44px;
+  font-family: "New Astro", sans-serif;
+}
+.seccion-servicio-conoce .estilos-servicio p {
+  font-size: 22px;
+}
+.seccion-servicio-conoce .estilos-servicio button {
+  font-size: 22px;
+}
+.seccion-servicio-conoce .estilos-conoce h2 {
+  font-size: 44px;
+  font-family: "New Astro", sans-serif;
+}
+.seccion-servicio-conoce .estilos-conoce p {
+  font-size: 22px;
+}
+.seccion-servicio-conoce .estilos-conoce button {
+  font-size: 22px;
+}
+
 /*--------------ESTILOS SECCION PROYECTOS DESTACADOS---------------*/
 /*--------------ESTILOS SECCION PODEMOS AYUDARTE---------------*/
 /*--------------ESTILOS SECCION---------------*/

@@ -8,3 +8,10 @@ $color-3: rgb(184, 246, 231);
     width: $ancho;
     height: $alto;
 }
+
+@font-face {
+    font-family: 'New Astro';
+    src: url('/assets/fonts/New\ Astro\ Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

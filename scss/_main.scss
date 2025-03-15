@@ -13,14 +13,23 @@
         display: flex;
         flex-direction: column;
         justify-content: center;  /* Asegura que el contenido se alinee verticalmente */
+             /* Centra el contenido horizontalmente */
         text-align: left;
         color: white;
-        h2 {
-          
+        padding: 6vh;
+        padding-top: 15vh;
+        h1 {
+           font-size: 38px; 
+           font-family: 'New Astro', sans-serif;
+        }
+        p {
+            font-size: 22px;
         }
         a {
-            @include tamanio(20vh,auto);
+            @include tamanio(30vh,auto);
             text-align: center;
+            font-size: 22px;
+            background-color: #D7BE0F;
         }
     }
 
@@ -32,16 +41,6 @@
     }
     
 }
-/* .seccion-somos::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3vh;
-    background: green;
-    border-radius: 50% ;
-} */
 
 /*--------------ESTILOS SECCION CARDS DE INFORMACION---------------*/
 .seccion-cards-info {
@@ -50,6 +49,10 @@
     h2 {
         color: black;
         text-align: center;
+        font-size: 38px;
+        font-family: 'New Astro', sans-serif;
+        padding-left: 20vh;
+        padding-right: 20vh;
     }
     .alineado-cards {
         display: flex;
@@ -61,6 +64,8 @@
         }
         h3 {
             color: black;
+            font-size: 20px;
+            font-family: 'New Astro', sans-serif;
         }
         p {
             color: black;
@@ -77,14 +82,35 @@
         h2 {
             color: black;
             text-align: center;
+            font-size: 44px;
+            font-family: 'New Astro', sans-serif;
+            padding-top: 10vh;
         }
         p {
             color: black;
-            
+            font-size: 22px;
+            padding-left: 28%;
+            padding-right: 28%;
         }
-        img {
+        
+        .imagenes-superpuestas {
+            position: relative; /* Esto es importante para que las imágenes se posicionen con respecto a este contenedor */
+            display: inline-block;
 
+            img.imagen-base {
+                width: 100%; /* Ajusta el tamaño de la primera imagen según lo necesites */
+            }
+
+            img.imagen-superpuesta {
+                position: absolute;
+                top: 0;
+                left: 0;
+                @include tamanio(40%,auto);
+                opacity: 0.8; /* Puedes ajustar la opacidad para ver mejor ambas imágenes */
+                
+            }
         }
+        
 
     }
 
@@ -92,20 +118,24 @@
         .presencia {
             h3 {
                 color: black;
+                font-size: 44px;
+                font-family: 'New Astro', sans-serif;
             }
             p {
-                
+                font-size: 22px;
             }
         }
         .proyectos {
             h3 {
                 color: black;
+                font-size: 44px;
+                font-family: 'New Astro', sans-serif;
             }
             p {
-
+                font-size: 22px;
             }
             button {
-
+                font-size: 22px;
             }
         }
     }
@@ -117,12 +147,29 @@
     @include tamanio(100%,auto);
     border: 1px black solid;
     .estilos-servicio {
-        
-
+       h2 {
+        font-size: 44px;
+        font-family: 'New Astro', sans-serif;
+       }
+       p {
+        font-size: 22px;    
+       }
+       button {
+        font-size: 22px;
+       }
     }
     
     .estilos-conoce {
-    
+        h2 {
+            font-size: 44px;
+            font-family: 'New Astro', sans-serif;
+        }
+        p {
+            font-size: 22px;
+        }
+        button {
+            font-size: 22px;
+        }
     }
 }
 .seccion-tres-torres {
