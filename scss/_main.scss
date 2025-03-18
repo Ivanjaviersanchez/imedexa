@@ -77,18 +77,21 @@
 .seccion-presencia-mapa {
     @include tamanio(100%,auto);
     border: 1px black solid;
+    
     .presencia-global{
+        @include tamanio(100%,auto);
         text-align: center;
+        
         h2 {
             color: black;
             text-align: center;
-            font-size: 44px;
+            font-size: 38px;
             font-family: 'New Astro', sans-serif;
             padding-top: 10vh;
         }
         p {
             color: black;
-            font-size: 22px;
+            
             padding-left: 28%;
             padding-right: 28%;
         }
@@ -98,15 +101,18 @@
             display: inline-block;
 
             img.imagen-base {
-                width: 100%; /* Ajusta el tamaño de la primera imagen según lo necesites */
+                @include tamanio(65%,auto);
+                
             }
 
             img.imagen-superpuesta {
                 position: absolute;
                 top: 0;
                 left: 0;
-                @include tamanio(40%,auto);
+                @include tamanio(20%,auto);
                 opacity: 0.8; /* Puedes ajustar la opacidad para ver mejor ambas imágenes */
+                margin-top: 42vh;
+                margin-left: 68vh;
                 
             }
         }
@@ -115,6 +121,8 @@
     }
 
     .presencia-proyectos{
+        @include tamanio(100%,auto);
+        margin-top: 30vh;
         .presencia {
             h3 {
                 color: black;

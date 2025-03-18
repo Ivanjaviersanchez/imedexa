@@ -44,10 +44,6 @@ h2, h3 {
   font-style: normal;
 }
 
-p {
-  font-size: 1em;
-}
-
 button {
   color: rgb(184, 246, 231);
   background-color: rgb(210, 217, 232);
@@ -223,18 +219,19 @@ footer {
   border: 1px black solid;
 }
 .seccion-presencia-mapa .presencia-global {
+  width: 100%;
+  height: auto;
   text-align: center;
 }
 .seccion-presencia-mapa .presencia-global h2 {
   color: black;
   text-align: center;
-  font-size: 44px;
+  font-size: 38px;
   font-family: "New Astro", sans-serif;
   padding-top: 10vh;
 }
 .seccion-presencia-mapa .presencia-global p {
   color: black;
-  font-size: 22px;
   padding-left: 28%;
   padding-right: 28%;
 }
@@ -243,15 +240,23 @@ footer {
   display: inline-block;
 }
 .seccion-presencia-mapa .presencia-global .imagenes-superpuestas img.imagen-base {
-  width: 100%; /* Ajusta el tamaño de la primera imagen según lo necesites */
+  width: 65%;
+  height: auto;
 }
 .seccion-presencia-mapa .presencia-global .imagenes-superpuestas img.imagen-superpuesta {
   position: absolute;
   top: 0;
   left: 0;
-  width: 40%;
+  width: 20%;
   height: auto;
   opacity: 0.8; /* Puedes ajustar la opacidad para ver mejor ambas imágenes */
+  margin-top: 42vh;
+  margin-left: 68vh;
+}
+.seccion-presencia-mapa .presencia-proyectos {
+  width: 100%;
+  height: auto;
+  margin-top: 30vh;
 }
 .seccion-presencia-mapa .presencia-proyectos .presencia h3 {
   color: black;
