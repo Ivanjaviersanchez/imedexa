@@ -30,6 +30,7 @@
             text-align: center;
             font-size: 22px;
             background-color: #D7BE0F;
+            border-color: #D7BE0F;
         }
     }
 
@@ -77,7 +78,7 @@
 .seccion-presencia-mapa {
     @include tamanio(100%,auto);
     border: 1px black solid;
-    
+    padding-bottom: 10vh;
     .presencia-global{
         @include tamanio(100%,auto);
         text-align: center;
@@ -87,17 +88,17 @@
             text-align: center;
             font-size: 38px;
             font-family: 'New Astro', sans-serif;
-            padding-top: 10vh;
+            padding-top: 8vh;
         }
         p {
             color: black;
-            
             padding-left: 28%;
             padding-right: 28%;
+            
         }
         
         .imagenes-superpuestas {
-            position: relative; /* Esto es importante para que las imágenes se posicionen con respecto a este contenedor */
+            position: relative; /* las imágenes se posicionen con respecto a este contenedor */
             display: inline-block;
 
             img.imagen-base {
@@ -110,40 +111,50 @@
                 top: 0;
                 left: 0;
                 @include tamanio(20%,auto);
-                opacity: 0.8; /* Puedes ajustar la opacidad para ver mejor ambas imágenes */
-                margin-top: 42vh;
-                margin-left: 68vh;
-                
+                opacity: 1; /* Puedes ajustar la opacidad para ver mejor ambas imágenes */
+                margin-top: 48vh;
+                margin-left: 88vh;  
             }
         }
-        
-
     }
 
     .presencia-proyectos{
         @include tamanio(100%,auto);
-        margin-top: 30vh;
+        
+        justify-content: space-around;
         .presencia {
+            text-align: center;
             h3 {
-                color: black;
-                font-size: 44px;
+                @include tamanio(82%,auto);
+                color: #80A426;
+                font-size: 38px;
                 font-family: 'New Astro', sans-serif;
+                text-align: left;
             }
             p {
-                font-size: 22px;
+                @include tamanio(82%,auto); 
+                text-align: left;
             }
         }
         .proyectos {
+            margin-top: 20vh;
+            text-align: center;
+
             h3 {
-                color: black;
-                font-size: 44px;
+                @include tamanio(90%,auto);
+                color: #80A426;
+                font-size: 38px;
                 font-family: 'New Astro', sans-serif;
+                text-align: right;
             }
             p {
-                font-size: 22px;
+                @include tamanio(90%,auto);
+                text-align: right;
             }
             button {
-                font-size: 22px;
+                background-color: #2A9A9A;
+                border-color: #2A9A9A;
+                margin-left: 30vh;
             }
         }
     }

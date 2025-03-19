@@ -171,6 +171,7 @@ footer {
   text-align: center;
   font-size: 22px;
   background-color: #D7BE0F;
+  border-color: #D7BE0F;
 }
 .seccion-somos img {
   width: 100%;
@@ -217,6 +218,7 @@ footer {
   width: 100%;
   height: auto;
   border: 1px black solid;
+  padding-bottom: 10vh;
 }
 .seccion-presencia-mapa .presencia-global {
   width: 100%;
@@ -228,7 +230,7 @@ footer {
   text-align: center;
   font-size: 38px;
   font-family: "New Astro", sans-serif;
-  padding-top: 10vh;
+  padding-top: 8vh;
 }
 .seccion-presencia-mapa .presencia-global p {
   color: black;
@@ -236,7 +238,7 @@ footer {
   padding-right: 28%;
 }
 .seccion-presencia-mapa .presencia-global .imagenes-superpuestas {
-  position: relative; /* Esto es importante para que las imágenes se posicionen con respecto a este contenedor */
+  position: relative; /* las imágenes se posicionen con respecto a este contenedor */
   display: inline-block;
 }
 .seccion-presencia-mapa .presencia-global .imagenes-superpuestas img.imagen-base {
@@ -249,33 +251,52 @@ footer {
   left: 0;
   width: 20%;
   height: auto;
-  opacity: 0.8; /* Puedes ajustar la opacidad para ver mejor ambas imágenes */
-  margin-top: 42vh;
-  margin-left: 68vh;
+  opacity: 1; /* Puedes ajustar la opacidad para ver mejor ambas imágenes */
+  margin-top: 48vh;
+  margin-left: 88vh;
 }
 .seccion-presencia-mapa .presencia-proyectos {
   width: 100%;
   height: auto;
-  margin-top: 30vh;
+  justify-content: space-around;
+}
+.seccion-presencia-mapa .presencia-proyectos .presencia {
+  text-align: center;
 }
 .seccion-presencia-mapa .presencia-proyectos .presencia h3 {
-  color: black;
-  font-size: 44px;
+  width: 82%;
+  height: auto;
+  color: #80A426;
+  font-size: 38px;
   font-family: "New Astro", sans-serif;
+  text-align: left;
 }
 .seccion-presencia-mapa .presencia-proyectos .presencia p {
-  font-size: 22px;
+  width: 82%;
+  height: auto;
+  text-align: left;
+}
+.seccion-presencia-mapa .presencia-proyectos .proyectos {
+  margin-top: 20vh;
+  text-align: center;
 }
 .seccion-presencia-mapa .presencia-proyectos .proyectos h3 {
-  color: black;
-  font-size: 44px;
+  width: 90%;
+  height: auto;
+  color: #80A426;
+  font-size: 38px;
   font-family: "New Astro", sans-serif;
+  text-align: right;
 }
 .seccion-presencia-mapa .presencia-proyectos .proyectos p {
-  font-size: 22px;
+  width: 90%;
+  height: auto;
+  text-align: right;
 }
 .seccion-presencia-mapa .presencia-proyectos .proyectos button {
-  font-size: 22px;
+  background-color: #2A9A9A;
+  border-color: #2A9A9A;
+  margin-left: 30vh;
 }
 
 /*--------------ESTILOS SECCION SERVICIO/CONOCE---------------*/
