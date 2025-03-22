@@ -251,8 +251,7 @@
         @include tamanio(60%,auto); 
         background-color: #D7BE0F; 
         border-color: #D7BE0F;
-        margin-top: 1vh;
-        
+        margin-top: 1vh; 
     }
 }
 
@@ -260,14 +259,69 @@
 /*--------------ESTILOS SECCION PROYECTOS DESTACADOS---------------*/
 .seccion-proyectos-destacados {
     @include tamanio(100%,auto);
-    img {
-        @include tamanio(100%,auto);
+    background-image: url("/assets/elementos-home/fondo-proyectos-destacados.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-left: 8vh;
+    padding-right: 8vh;
+    border: solid 1px black;
+    .row {
+        display: flex;
+        justify-content: center;
     }
 
+    h2 { 
+        font-size: 38px;
+        font-family: 'New Astro', sans-serif;
+        text-align: center;
+        color: black;
+    }
+    .col-lg-4 {
+        margin-bottom: 6vh;
+        margin-top: 6vh;  
+    }
+    img {
+        @include tamanio(80%,auto); 
+    }
+    h3 {
+        font-size: 30px;
+        font-family: 'New Astro', sans-serif;
+        text-align: center; 
+        color: black;
+        margin-left: 10vh;
+        margin-right: 10vh;
+    }
+    h4 {
+        font-size: 20px;
+        text-align: center; 
+        color: black;    
+    }
+    button {
+        background-color: #D7BE0F; 
+        border-color: #D7BE0F;
+        margin-top: 1vh; 
+    }
 }
 
 /*--------------ESTILOS SECCION CATALOGO---------------*/
 .seccion-catalogo {
+    @include tamanio(100%,auto);
+    border: solid 1px black;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    background-image: url("");
+    h3 {
+        font-size: 30px;
+        font-family: 'New Astro', sans-serif;
+        text-align: center; 
+        color: black;
+    }
+    button {
+        background-color: #D7BE0F; 
+        border-color: #D7BE0F;
+        margin-top: 1vh; 
+    }
 
 
 }
