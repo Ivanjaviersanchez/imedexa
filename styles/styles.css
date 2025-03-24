@@ -7,6 +7,19 @@
   font-weight: normal;
   font-style: normal;
 }
+/* Media query para mobile */
+@media (max-width: 768px) {
+  /*  .container-fluid {
+       justify-content: space-between;  
+       @include tamanio(50%,auto);
+   }
+   .seccion-somos, .seccion-cards-info, .seccion-presencia-mapa, .seccion-servicio-conoce, .seccion-fabricas, .seccion-proyectos-destacados, .seccion-catalogo {
+       padding: 20px;
+       display: flex;
+       flex-direction: row;
+
+   } */
+}
 /*-----------------ESTILOS GENERALES----------------*/
 * {
   margin: 0;
@@ -92,15 +105,23 @@ img {
   padding-right: 1em;
   background-color: white;
 }
+.header nav .nav-item .nav-link {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el fondo y el color del texto */
+  border-radius: 5px;
+}
+.header nav .nav-item .nav-link:hover {
+  background-color: gray;
+  border-radius: 5px;
+  color: white; /* Cambia el color del texto a blanco */
+}
 .header nav a {
   /*  padding-right: 5em;  */
   padding-right: 2em;
   padding-left: 3em;
 }
-.header nav div {
+.header nav .estilos-menu {
   padding-left: 10em;
 }
-
 /*--------------ESTILOS DEL FOOTER---------------*/
 footer {
   width: 100%;
@@ -144,34 +165,48 @@ footer {
   background-image: url(/assets/elementos-home/Imagen-somos-conductores.png);
   background-size: cover;
   background-position: center;
-  /* overflow: hidden; */
+  /*  overflow: hidden; */
 }
-.seccion-somos .card-body {
+.seccion-somos .col-6 {
+  width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
+  max-width: 100%; /* Evita el desbordamiento */
+  box-sizing: border-box; /* Incluye el padding dentro del ancho total */
+  /* Estilo cuando el cursor pasa sobre el enlace */
+}
+.seccion-somos .col-6 .card-body {
   width: 100%;
   height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center; /* Asegura que el contenido se alinee verticalmente */
-  /* Centra el contenido horizontalmente */
   text-align: left;
   color: white;
   padding: 6vh;
   padding-top: 15vh;
 }
-.seccion-somos .card-body h1 {
-  font-size: 38px;
+.seccion-somos .col-6 .card-body h1 {
+  font-size: 45px;
   font-family: "New Astro", sans-serif;
 }
-.seccion-somos .card-body p {
+.seccion-somos .col-6 .card-body p {
+  width: 100%;
+  height: auto;
   font-size: 22px;
 }
-.seccion-somos .card-body a {
+.seccion-somos .col-6 .card-body a {
   width: 30vh;
   height: auto;
   text-align: center;
   font-size: 22px;
   background-color: #D7BE0F;
   border-color: #D7BE0F;
+}
+.seccion-somos .col-6 .card-body .btn {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el fondo y el color del texto */
+}
+.seccion-somos .col-6 .card-body .btn:hover {
+  background-color: gray;
+  color: white;
 }
 .seccion-somos img {
   width: 100%;
@@ -185,11 +220,12 @@ footer {
   width: 100%;
   height: auto;
   border: 1px black solid;
+  margin-top: 6vh;
 }
 .seccion-cards-info h2 {
   color: black;
   text-align: center;
-  font-size: 38px;
+  font-size: 28px;
   font-family: "New Astro", sans-serif;
   padding-left: 20vh;
   padding-right: 20vh;
@@ -206,11 +242,14 @@ footer {
 }
 .seccion-cards-info .alineado-cards h3 {
   color: black;
-  font-size: 20px;
+  font-size: 30px;
   font-family: "New Astro", sans-serif;
 }
 .seccion-cards-info .alineado-cards p {
   color: black;
+  width: 80%;
+  height: auto;
+  text-align: center;
 }
 
 /*--------------ESTILOS SECCION PRESENCIA/MAPA---------------*/
@@ -221,6 +260,7 @@ footer {
   padding-bottom: 10vh;
   margin: 0;
   padding: 0;
+  margin-top: 10vh;
 }
 .seccion-presencia-mapa img {
   width: 99%;
@@ -280,6 +320,8 @@ footer {
   justify-content: space-around;
   padding-top: 66vh;
   padding-bottom: 10vh;
+  /* Estilo por defecto para el botón */
+  /* Estilo cuando el cursor pasa sobre el botón */
 }
 .seccion-presencia-mapa .presencia-proyectos .presencia {
   text-align: center;
@@ -319,6 +361,13 @@ footer {
   border-color: #2A9A9A;
   margin-left: 30vh;
 }
+.seccion-presencia-mapa .presencia-proyectos .proyectos .btn {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el fondo y el color del texto */
+}
+.seccion-presencia-mapa .presencia-proyectos .proyectos .btn:hover {
+  background-color: gray;
+  color: white;
+}
 
 /*--------------ESTILOS SECCION SERVICIO/CONOCE---------------*/
 .seccion-servicio-conoce {
@@ -327,6 +376,8 @@ footer {
   border: 1px black solid;
   background-image: url("/assets/elementos-home/fondo-torres-2.jpg");
   justify-items: center;
+  /* Estilo por defecto para los botones dentro de los contenedores */
+  /* Transición suave para los botones */
 }
 .seccion-servicio-conoce .estilos-servicio {
   width: 80%;
@@ -366,12 +417,22 @@ footer {
   width: 90%;
   height: auto;
 }
+.seccion-servicio-conoce .estilos-servicio .btn:hover,
+.seccion-servicio-conoce .estilos-conoce .btn:hover {
+  background-color: gray; /* Cambia el fondo a gris */
+  color: white; /* Cambia el color del texto a blanco */
+}
+.seccion-servicio-conoce .estilos-servicio .btn,
+.seccion-servicio-conoce .estilos-conoce .btn {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el fondo y el color del texto */
+}
 
 /*--------------ESTILOS SECCION FABRICAS---------------*/
 .seccion-fabricas {
   width: 100%;
   height: auto;
   text-align: center;
+  margin-top: 4vh;
 }
 .seccion-fabricas .posicion-fabricas {
   padding-top: 15vh;
@@ -393,6 +454,18 @@ footer {
   margin-top: 1vh;
 }
 
+/* Estilo por defecto para los botones dentro de la sección seccion-fabricas */
+.seccion-fabricas .btn:hover {
+  background-color: gray; /* Cambia el fondo a gris */
+  color: white; /* Cambia el color del texto a blanco */
+  border-color: #D7BE0F;
+}
+
+/* Transición suave para los botones */
+.seccion-fabricas .btn {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el fondo y el color del texto */
+}
+
 /*--------------ESTILOS SECCION PROYECTOS DESTACADOS---------------*/
 .seccion-proyectos-destacados {
   width: 100%;
@@ -403,27 +476,31 @@ footer {
   text-align: center;
   padding-left: 8vh;
   padding-right: 8vh;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  padding-bottom: 5vh;
   border: solid 1px black;
-}
-.seccion-proyectos-destacados .row {
-  display: flex;
-  justify-content: center;
 }
 .seccion-proyectos-destacados h2 {
   font-size: 38px;
   font-family: "New Astro", sans-serif;
   text-align: center;
   color: black;
+  padding-top: 8vh;
 }
-.seccion-proyectos-destacados .col-lg-4 {
-  margin-bottom: 6vh;
-  margin-top: 6vh;
+.seccion-proyectos-destacados .row {
+  display: flex;
+  justify-content: center;
 }
-.seccion-proyectos-destacados img {
+.seccion-proyectos-destacados .row .col-lg-4 {
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+}
+.seccion-proyectos-destacados .row .col-lg-4 img {
   width: 80%;
   height: auto;
 }
-.seccion-proyectos-destacados h3 {
+.seccion-proyectos-destacados .row .col-lg-4 h3 {
   font-size: 30px;
   font-family: "New Astro", sans-serif;
   text-align: center;
@@ -431,36 +508,66 @@ footer {
   margin-left: 10vh;
   margin-right: 10vh;
 }
-.seccion-proyectos-destacados h4 {
+.seccion-proyectos-destacados .row .col-lg-4 h4 {
   font-size: 20px;
   text-align: center;
   color: black;
 }
-.seccion-proyectos-destacados button {
+.seccion-proyectos-destacados .row .col-lg-4 button {
   background-color: #D7BE0F;
   border-color: #D7BE0F;
   margin-top: 1vh;
 }
 
+/* Estilo por defecto para los botones dentro de .seccion-proyectos-destacados */
+.seccion-proyectos-destacados .col-lg-4 button:hover {
+  background-color: gray; /* Cambia el fondo a gris */
+  color: white; /* Cambia el color del texto a blanco */
+}
+
+/* Transición suave para los botones */
+.seccion-proyectos-destacados .col-lg-4 button {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el fondo y el color del texto */
+}
+
 /*--------------ESTILOS SECCION CATALOGO---------------*/
 .seccion-catalogo {
-  width: 100%;
+  width: 90%;
   height: auto;
+  background-image: url("/assets/elementos-home/fondo-torres-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  margin-top: 2vh;
+  margin-bottom: 10vh;
   border: solid 1px black;
-  padding-top: 15vh;
-  padding-bottom: 15vh;
-  background-image: url("");
+  border-radius: 20px; /* Ajusta el valor para el radio de la curva */
 }
 .seccion-catalogo h3 {
   font-size: 30px;
   font-family: "New Astro", sans-serif;
   text-align: center;
   color: black;
+  margin-bottom: 4vh;
 }
 .seccion-catalogo button {
   background-color: #D7BE0F;
   border-color: #D7BE0F;
   margin-top: 1vh;
+}
+
+/* Estilo por defecto para el botón dentro de .seccion-catalogo */
+.seccion-catalogo .btn:hover {
+  background-color: gray; /* Cambia el fondo a gris */
+  color: white; /* Cambia el color del texto a blanco */
+  border-color: #D7BE0F;
+}
+
+/* Transición suave para el botón */
+.seccion-catalogo .btn {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el fondo y el color del texto */
 }
 
 /*# sourceMappingURL=styles.css.map */

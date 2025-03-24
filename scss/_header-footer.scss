@@ -10,19 +10,35 @@
     }
     nav {
         @include tamanio(100%,auto);
-        
         padding-left: 1em;
         padding-right: 1em;
         background-color: white;
-
+        .nav-item .nav-link {
+            transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el fondo y el color del texto */
+            border-radius: 5px;
+        }
+        .nav-item .nav-link:hover {
+            background-color: gray;
+            border-radius: 5px;
+            color: white; /* Cambia el color del texto a blanco */
+        }
         a {
            /*  padding-right: 5em;  */
-            padding-right: 2em;
-            padding-left: 3em;
+           padding-right: 2em;
+           padding-left: 3em;
         }
-        
-        div {
+        button {
+            
+        }
+        .estilos-menu{
             padding-left: 10em;
+            ul {
+                li {
+                    a {
+                       
+                    }
+                }
+            }
         }
     }
 
