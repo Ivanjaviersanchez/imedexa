@@ -1,8 +1,6 @@
 /*--------------ESTILOS DEL HEADER---------------*/
 .header {
     @include tamanio(100%,auto);
-    
-    border: 1px black solid;
     margin: 0;
     padding: 0;
     .navbar-brand {

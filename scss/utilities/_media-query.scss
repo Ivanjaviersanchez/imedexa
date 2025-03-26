@@ -1,14 +1,131 @@
 /* Media query para mobile */
 @media (max-width: 768px) {
-   /*  .container-fluid {
-        justify-content: space-between;  
-        @include tamanio(50%,auto);
+    
+    .seccion-somos {
+        .row {
+            .col-6 {
+                .card-body {
+                    h1 {
+                        font-size: 30px;
+                        
+                    }
+                    p {
+                        font-size: 20px;
+                    }
+                    a {
+                        font-size: 20px;
+                    }
+                
+                }
+            }
+        }
     }
-    .seccion-somos, .seccion-cards-info, .seccion-presencia-mapa, .seccion-servicio-conoce, .seccion-fabricas, .seccion-proyectos-destacados, .seccion-catalogo {
-        padding: 20px;
-        display: flex;
-        flex-direction: row;
+
+    .seccion-cards-info {
+        .row {
+            h2 {
+                @include tamanio(100%,auto);
+                
+                padding: 0;
+                font-size: 22px;
+                margin-bottom: 8vh;
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            .alineado-cards {
+                margin-bottom: 6vh;
+                img {
+                    @include tamanio(auto,10vh);
+                }
+                h3 {
+                    font-size: 22px; 
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
         
-    } */
-  
+    }
+    .seccion-presencia-mapa {
+        @include tamanio(100%,auto);
+        .row {
+            img {
+                
+            }
+            .presencia-global {
+                h2 {
+                    font-size: 30px;
+                }
+                p {
+                    font-size: 15px;
+                    padding: 0;
+                    margin: 0;
+                }
+                .imagenes-superpuestas {
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    img.imagen-base {
+                        @include tamanio(100%,auto);
+                        padding: 0;
+                        margin: 0;
+                    }
+                    img.imagen-superpuesta {
+                        @include tamanio(30%,auto);
+                        padding: 0;
+                        margin: 0;
+                        margin-top: 28vh;
+                        margin-left: 27vh;
+                    }
+                }
+            }
+            .presencia-proyectos {
+                @include tamanio(100%, auto);
+                justify-content: space-around;
+                padding-top: 55vh;
+               
+
+               /*  @include tamanio(100%,auto);
+                display: flex;
+                flex-direction: column;
+                margin: 0; */
+                
+                .presencia {
+                    @include tamanio(90%,auto);
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    
+                    h3 {
+                        font-size: 30px;
+                        text-align: center;
+                    }
+                    p {
+                        font-size: 15px;
+                        text-align: center;
+                    }
+                }
+                .proyectos {
+                    @include tamanio(90%,auto);
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    margin-top: 8vh;
+                    h3 {
+                        font-size: 30px;
+                        text-align: center;
+                    }
+                    p {
+                        font-size: 15px;
+                        text-align: center;
+                    }
+                    button {
+                        font-size: 15px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+    }
+
 }

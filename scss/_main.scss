@@ -1,7 +1,6 @@
 /*--------------ESTILOS SECCION SOMOS---------------*/
 .seccion-somos {
     @include tamanio(100%,auto);
-    border: 1px black solid; 
     position: relative;
     background-image: url(/assets/elementos-home/Imagen-somos-conductores.png);
     background-size: cover;
@@ -21,13 +20,14 @@
             padding: 6vh;
             padding-top: 15vh;
             h1 {
-                
+                @include tamanio(100%,auto);
                 font-size: 45px; 
                 font-family: 'New Astro', sans-serif;
             }
             p {
                 @include tamanio(100%,auto);
                 font-size: 22px;
+                
             }
             a {
                 @include tamanio(30vh,auto);
@@ -58,7 +58,6 @@
 /*--------------ESTILOS SECCION CARDS DE INFORMACION---------------*/
 .seccion-cards-info {
     @include tamanio(100%,auto);
-    border: 1px black solid; 
     margin-top: 6vh;
     h2 {
         color: black;
@@ -97,6 +96,9 @@
     margin: 0;
     padding: 0;
     margin-top: 10vh;
+   /*  background-image: url("/assets/elementos-home/imagen-presencia-global.png");
+    background-size: cover;
+    background-position: center; */
     img {
         @include tamanio(99%, auto);
         object-fit: cover;
@@ -158,6 +160,7 @@
         padding-top: 66vh;
         padding-bottom: 10vh;
         .presencia {
+           
             text-align: center;
             h3 {
                 @include tamanio(82%, auto);
@@ -211,46 +214,61 @@
 /*--------------ESTILOS SECCION SERVICIO/CONOCE---------------*/
 .seccion-servicio-conoce {
     @include tamanio(100%,auto);
-    border: 1px black solid;
-    background-image: url("/assets/elementos-home/fondo-torres-2.jpg");
+    background-image: url("/assets/elementos-home/fondo-servicio-conoce.png");
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
     justify-items: center;
+   
     .estilos-servicio {
         @include tamanio(80%,auto); 
-        img {
-            @include tamanio(90%,auto);    
+        .card {
+            background: transparent; /* Hace el fondo de las tarjetas transparente */
+            border: none; /* Elimina cualquier borde sólido de la tarjeta */
+            box-shadow: none; /* Elimina las sombras predeterminadas si las hay */
+            img {
+                @include tamanio(90%,auto);    
+            }
+            h2 {
+                font-size: 38px;
+                font-family: 'New Astro', sans-serif;
+            }
+            p {
+              
+            }
+            button {
+                @include tamanio(30%,auto);
+                background-color: #D7BE0F;
+                border-color: #D7BE0F;
+            }
+        
         }
-        h2 {
-            font-size: 38px;
-            font-family: 'New Astro', sans-serif;
-        }
-        p {
-          
-        }
-        button {
-            @include tamanio(30%,auto);
-            background-color: #D7BE0F;
-            border-color: #D7BE0F;
-        }
+        
     }
     
     .estilos-conoce {
         @include tamanio(80%,auto);
         text-align: right;
-        h2 {
-            font-size: 38px;
-            font-family: 'New Astro', sans-serif;
-            text-align: right;
-        }
-        p {
-            
-        }
-        button {
-            @include tamanio(30%,auto); 
-            background-color: #D7BE0F; 
-            border-color: #D7BE0F;
-        }
-        img {
-            @include tamanio(90%,auto); 
+        .card {
+            background: transparent; /* Hace el fondo de las tarjetas transparente */
+            border: none; /* Elimina cualquier borde sólido de la tarjeta */
+            box-shadow: none; /* Elimina las sombras predeterminadas si las hay */
+            h2 {
+                font-size: 38px;
+                font-family: 'New Astro', sans-serif;
+                text-align: right;
+            }
+            p {
+                
+            }
+            button {
+                @include tamanio(30%,auto); 
+                background-color: #D7BE0F; 
+                border-color: #D7BE0F;
+            }
+            img {
+                @include tamanio(90%,auto); 
+            }
         }
     }
 
@@ -277,8 +295,13 @@
     .posicion-fabricas {
         padding-top: 15vh;
     }
+    .card {
+        background: transparent; /* Hace el fondo de las tarjetas transparente */
+        border: none; /* Elimina cualquier borde sólido de la tarjeta */
+        box-shadow: none; /* Elimina las sombras predeterminadas si las hay */
+    }
     h3 {
-        font-size: 22px;
+        font-size: 38px;
         font-family: 'New Astro', sans-serif;
         text-align: center;
     }
@@ -318,7 +341,6 @@
     margin-top: 10vh;
     margin-bottom: 10vh;
     padding-bottom: 5vh;
-    border: solid 1px black;
     h2 { 
         font-size: 38px;
         font-family: 'New Astro', sans-serif;

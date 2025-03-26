@@ -9,16 +9,111 @@
 }
 /* Media query para mobile */
 @media (max-width: 768px) {
-  /*  .container-fluid {
-       justify-content: space-between;  
-       @include tamanio(50%,auto);
-   }
-   .seccion-somos, .seccion-cards-info, .seccion-presencia-mapa, .seccion-servicio-conoce, .seccion-fabricas, .seccion-proyectos-destacados, .seccion-catalogo {
-       padding: 20px;
-       display: flex;
-       flex-direction: row;
-
-   } */
+  .seccion-somos .row .col-6 .card-body h1 {
+    font-size: 30px;
+  }
+  .seccion-somos .row .col-6 .card-body p {
+    font-size: 20px;
+  }
+  .seccion-somos .row .col-6 .card-body a {
+    font-size: 20px;
+  }
+  .seccion-cards-info .row h2 {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    font-size: 22px;
+    margin-bottom: 8vh;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .seccion-cards-info .row .alineado-cards {
+    margin-bottom: 6vh;
+  }
+  .seccion-cards-info .row .alineado-cards img {
+    width: auto;
+    height: 10vh;
+  }
+  .seccion-cards-info .row .alineado-cards h3 {
+    font-size: 22px;
+  }
+  .seccion-cards-info .row .alineado-cards p {
+    font-size: 15px;
+  }
+  .seccion-presencia-mapa {
+    width: 100%;
+    height: auto;
+  }
+  .seccion-presencia-mapa .row .presencia-global h2 {
+    font-size: 30px;
+  }
+  .seccion-presencia-mapa .row .presencia-global p {
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+  }
+  .seccion-presencia-mapa .row .presencia-global .imagenes-superpuestas {
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  .seccion-presencia-mapa .row .presencia-global .imagenes-superpuestas img.imagen-base {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .seccion-presencia-mapa .row .presencia-global .imagenes-superpuestas img.imagen-superpuesta {
+    width: 30%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    margin-top: 28vh;
+    margin-left: 27vh;
+  }
+  .seccion-presencia-mapa .row .presencia-proyectos {
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    padding-top: 55vh;
+    /*  @include tamanio(100%,auto);
+     display: flex;
+     flex-direction: column;
+     margin: 0; */
+  }
+  .seccion-presencia-mapa .row .presencia-proyectos .presencia {
+    width: 90%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .seccion-presencia-mapa .row .presencia-proyectos .presencia h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .seccion-presencia-mapa .row .presencia-proyectos .presencia p {
+    font-size: 15px;
+    text-align: center;
+  }
+  .seccion-presencia-mapa .row .presencia-proyectos .proyectos {
+    width: 90%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 8vh;
+  }
+  .seccion-presencia-mapa .row .presencia-proyectos .proyectos h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .seccion-presencia-mapa .row .presencia-proyectos .proyectos p {
+    font-size: 15px;
+    text-align: center;
+  }
+  .seccion-presencia-mapa .row .presencia-proyectos .proyectos button {
+    font-size: 15px;
+    margin: 0;
+  }
 }
 /*-----------------ESTILOS GENERALES----------------*/
 * {
@@ -91,7 +186,6 @@ img {
 .header {
   width: 100%;
   height: auto;
-  border: 1px black solid;
   margin: 0;
   padding: 0;
 }
@@ -160,7 +254,6 @@ footer {
 .seccion-somos {
   width: 100%;
   height: auto;
-  border: 1px black solid;
   position: relative;
   background-image: url(/assets/elementos-home/Imagen-somos-conductores.png);
   background-size: cover;
@@ -185,6 +278,8 @@ footer {
   padding-top: 15vh;
 }
 .seccion-somos .col-6 .card-body h1 {
+  width: 100%;
+  height: auto;
   font-size: 45px;
   font-family: "New Astro", sans-serif;
 }
@@ -219,7 +314,6 @@ footer {
 .seccion-cards-info {
   width: 100%;
   height: auto;
-  border: 1px black solid;
   margin-top: 6vh;
 }
 .seccion-cards-info h2 {
@@ -261,6 +355,9 @@ footer {
   margin: 0;
   padding: 0;
   margin-top: 10vh;
+  /*  background-image: url("/assets/elementos-home/imagen-presencia-global.png");
+   background-size: cover;
+   background-position: center; */
 }
 .seccion-presencia-mapa img {
   width: 99%;
@@ -373,8 +470,10 @@ footer {
 .seccion-servicio-conoce {
   width: 100%;
   height: auto;
-  border: 1px black solid;
-  background-image: url("/assets/elementos-home/fondo-torres-2.jpg");
+  background-image: url("/assets/elementos-home/fondo-servicio-conoce.png");
+  background-size: cover;
+  background-position: center;
+  background-size: 100% 100%;
   justify-items: center;
   /* Estilo por defecto para los botones dentro de los contenedores */
   /* Transición suave para los botones */
@@ -383,15 +482,20 @@ footer {
   width: 80%;
   height: auto;
 }
-.seccion-servicio-conoce .estilos-servicio img {
+.seccion-servicio-conoce .estilos-servicio .card {
+  background: transparent; /* Hace el fondo de las tarjetas transparente */
+  border: none; /* Elimina cualquier borde sólido de la tarjeta */
+  box-shadow: none; /* Elimina las sombras predeterminadas si las hay */
+}
+.seccion-servicio-conoce .estilos-servicio .card img {
   width: 90%;
   height: auto;
 }
-.seccion-servicio-conoce .estilos-servicio h2 {
+.seccion-servicio-conoce .estilos-servicio .card h2 {
   font-size: 38px;
   font-family: "New Astro", sans-serif;
 }
-.seccion-servicio-conoce .estilos-servicio button {
+.seccion-servicio-conoce .estilos-servicio .card button {
   width: 30%;
   height: auto;
   background-color: #D7BE0F;
@@ -402,18 +506,23 @@ footer {
   height: auto;
   text-align: right;
 }
-.seccion-servicio-conoce .estilos-conoce h2 {
+.seccion-servicio-conoce .estilos-conoce .card {
+  background: transparent; /* Hace el fondo de las tarjetas transparente */
+  border: none; /* Elimina cualquier borde sólido de la tarjeta */
+  box-shadow: none; /* Elimina las sombras predeterminadas si las hay */
+}
+.seccion-servicio-conoce .estilos-conoce .card h2 {
   font-size: 38px;
   font-family: "New Astro", sans-serif;
   text-align: right;
 }
-.seccion-servicio-conoce .estilos-conoce button {
+.seccion-servicio-conoce .estilos-conoce .card button {
   width: 30%;
   height: auto;
   background-color: #D7BE0F;
   border-color: #D7BE0F;
 }
-.seccion-servicio-conoce .estilos-conoce img {
+.seccion-servicio-conoce .estilos-conoce .card img {
   width: 90%;
   height: auto;
 }
@@ -437,8 +546,13 @@ footer {
 .seccion-fabricas .posicion-fabricas {
   padding-top: 15vh;
 }
+.seccion-fabricas .card {
+  background: transparent; /* Hace el fondo de las tarjetas transparente */
+  border: none; /* Elimina cualquier borde sólido de la tarjeta */
+  box-shadow: none; /* Elimina las sombras predeterminadas si las hay */
+}
 .seccion-fabricas h3 {
-  font-size: 22px;
+  font-size: 38px;
   font-family: "New Astro", sans-serif;
   text-align: center;
 }
@@ -479,7 +593,6 @@ footer {
   margin-top: 10vh;
   margin-bottom: 10vh;
   padding-bottom: 5vh;
-  border: solid 1px black;
 }
 .seccion-proyectos-destacados h2 {
   font-size: 38px;
