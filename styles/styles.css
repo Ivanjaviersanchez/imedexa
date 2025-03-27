@@ -333,7 +333,6 @@ footer {
   background-image: url(/assets/elementos-home/Imagen-somos-conductores.png);
   background-size: cover;
   background-position: center;
-  /*  overflow: hidden; */
 }
 .seccion-somos .col-6 {
   width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
@@ -381,8 +380,6 @@ footer {
 .seccion-somos img {
   width: 100%;
   height: auto;
-  /* @include tamanio(100%,70vh);
-  padding-top: 55vh; */
 }
 
 /*--------------ESTILOS SECCION CARDS DE INFORMACION---------------*/
@@ -425,14 +422,10 @@ footer {
 .seccion-presencia-mapa {
   width: 100%;
   height: auto;
-  border: 1px black solid;
   padding-bottom: 10vh;
   margin: 0;
   padding: 0;
   margin-top: 10vh;
-  /*  background-image: url("/assets/elementos-home/imagen-presencia-global.png");
-   background-size: cover;
-   background-position: center; */
 }
 .seccion-presencia-mapa img {
   width: 99%;
