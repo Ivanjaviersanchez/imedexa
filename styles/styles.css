@@ -333,7 +333,7 @@ footer {
   background-image: url("/assets/elementos-home/fondo-seccion-somos.png");
   background-size: cover;
   background-position: center;
-  padding-bottom: 15vh;
+  padding-bottom: 22vh;
 }
 .seccion-somos .col-6 {
   width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
