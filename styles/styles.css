@@ -76,10 +76,6 @@
     height: auto;
     justify-content: space-around;
     padding-top: 55vh;
-    /*  @include tamanio(100%,auto);
-     display: flex;
-     flex-direction: column;
-     margin: 0; */
   }
   .seccion-presencia-mapa .row .presencia-proyectos .presencia {
     width: 90%;
@@ -96,11 +92,10 @@
     text-align: center;
   }
   .seccion-presencia-mapa .row .presencia-proyectos .proyectos {
-    width: 90%;
+    width: 75%;
     height: auto;
-    padding-left: 10%;
-    padding-right: 10%;
     margin-top: 8vh;
+    text-align: center;
   }
   .seccion-presencia-mapa .row .presencia-proyectos .proyectos h3 {
     font-size: 30px;
@@ -112,7 +107,87 @@
   }
   .seccion-presencia-mapa .row .presencia-proyectos .proyectos button {
     font-size: 15px;
+    margin-left: 0vh;
+    margin-right: 0;
+  }
+  .seccion-servicio-conoce .estilos-servicio .card .col-md-5 img {
+    width: 100%;
+    height: auto;
     margin: 0;
+    padding: 0;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .seccion-servicio-conoce .estilos-servicio .card .col-md-7 .card-body {
+    text-align: center;
+  }
+  .seccion-servicio-conoce .estilos-servicio .card .col-md-7 .card-body h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .seccion-servicio-conoce .estilos-servicio .card .col-md-7 .card-body p {
+    font-size: 15px;
+    text-align: center;
+  }
+  .seccion-servicio-conoce .estilos-servicio .card .col-md-7 .card-body button {
+    font-size: 15px;
+    text-align: center;
+  }
+  .seccion-servicio-conoce .estilos-conoce {
+    margin-top: 10vh;
+  }
+  .seccion-servicio-conoce .estilos-conoce .card .col-md-7 .card-body {
+    text-align: center;
+  }
+  .seccion-servicio-conoce .estilos-conoce .card .col-md-7 .card-body h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .seccion-servicio-conoce .estilos-conoce .card .col-md-7 .card-body p {
+    font-size: 15px;
+    text-align: center;
+  }
+  .seccion-servicio-conoce .estilos-conoce .card .col-md-7 .card-body button {
+    font-size: 15px;
+    text-align: center;
+  }
+  .seccion-servicio-conoce .estilos-conoce .card .col-md-5 img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .seccion-fabricas .row .col .card .card-body h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .seccion-fabricas .row .col .card .card-body img {
+    width: 70%;
+    height: auto;
+  }
+  .seccion-fabricas .row .col .card .card-body button {
+    font-size: 15px;
+    text-align: center;
+  }
+  .seccion-proyectos-destacados .row .row-12 h2 {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20vh;
+    font-size: 30px;
+    text-align: center;
+  }
+  .seccion-proyectos-destacados .row .col-lg-4 img {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .seccion-catalogo .card-body h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .seccion-catalogo .card-body button {
+    font-size: 15px;
   }
 }
 /*-----------------ESTILOS GENERALES----------------*/
@@ -490,6 +565,8 @@ footer {
 .seccion-servicio-conoce .estilos-servicio .card img {
   width: 90%;
   height: auto;
+  margin: 0;
+  padding: 0;
 }
 .seccion-servicio-conoce .estilos-servicio .card h2 {
   font-size: 38px;
@@ -647,7 +724,7 @@ footer {
 .seccion-catalogo {
   width: 90%;
   height: auto;
-  background-image: url("/assets/elementos-home/fondo-torres-2.jpg");
+  background-image: url("/assets/elementos-home/fondo-catalogo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;

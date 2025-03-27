@@ -196,6 +196,7 @@
                 background-color: #2A9A9A;
                 border-color: #2A9A9A;
                 margin-left: 30vh;
+                
             }
         }
         /* Estilo por defecto para el botón */
@@ -228,6 +229,8 @@
             box-shadow: none; /* Elimina las sombras predeterminadas si las hay */
             img {
                 @include tamanio(90%,auto);    
+                margin: 0;
+                padding: 0;
             }
             h2 {
                 font-size: 38px;
@@ -395,7 +398,7 @@
 
 .seccion-catalogo {
     @include tamanio(90%,auto);
-    background-image: url("/assets/elementos-home/fondo-torres-2.jpg");
+    background-image: url("/assets/elementos-home/fondo-catalogo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;

@@ -47,6 +47,7 @@
         }
         
     }
+
     .seccion-presencia-mapa {
         @include tamanio(100%,auto);
         .row {
@@ -84,18 +85,10 @@
                 @include tamanio(100%, auto);
                 justify-content: space-around;
                 padding-top: 55vh;
-               
-
-               /*  @include tamanio(100%,auto);
-                display: flex;
-                flex-direction: column;
-                margin: 0; */
-                
                 .presencia {
                     @include tamanio(90%,auto);
                     padding-left: 10%;
                     padding-right: 10%;
-                    
                     h3 {
                         font-size: 30px;
                         text-align: center;
@@ -106,10 +99,9 @@
                     }
                 }
                 .proyectos {
-                    @include tamanio(90%,auto);
-                    padding-left: 10%;
-                    padding-right: 10%;
+                    @include tamanio(75%,auto);
                     margin-top: 8vh;
+                    text-align: center;
                     h3 {
                         font-size: 30px;
                         text-align: center;
@@ -120,12 +112,140 @@
                     }
                     button {
                         font-size: 15px;
-                        margin: 0;
+                        margin-left: 0vh;
+                        margin-right: 0;
                     }
                 }
             }
         }
 
+    }
+
+    .seccion-servicio-conoce {
+        
+        .estilos-servicio {
+            .card {
+                .col-md-5 {
+                    img {
+                        @include tamanio(100%,auto);    
+                        margin: 0;
+                        padding: 0;
+                        padding-left: 15%;
+                        padding-right: 15%;
+                    }
+                }
+                .col-md-7 {
+                    .card-body {
+                        text-align: center;
+                        h2 {
+                            font-size: 30px;
+                            text-align: center;
+                        }
+                        p {
+                            font-size: 15px;
+                            text-align: center;
+                        }
+                        button {
+                            font-size: 15px;
+                            text-align: center;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .estilos-conoce {
+            margin-top: 10vh;
+            .card {
+                .col-md-7 {
+                    .card-body {
+                        text-align: center;
+                        h2 {
+                            font-size: 30px;
+                            text-align: center;
+                        }
+                        p {
+                            font-size: 15px;
+                            text-align: center;
+                        }
+                        button {
+                            font-size: 15px;
+                            text-align: center;
+                        }
+                    }
+                }
+                .col-md-5 {
+                    img {
+                        @include tamanio(100%,auto);    
+                        margin: 0;
+                        padding: 0;
+                        padding-left: 15%;
+                        padding-right: 15%;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .seccion-fabricas {
+        .row {
+            .col {
+                .card {
+                    .card-body {
+                        h3 {
+                            font-size: 30px;
+                            text-align: center; 
+                        }
+                        img {
+                            @include tamanio(70%,auto);
+                        }
+                        button {
+                            font-size: 15px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .seccion-proyectos-destacados {
+        .row {
+            .row-12 {
+                h2 {
+                    margin-left: 20%;
+                    margin-right: 20%;
+                    margin-top: 20vh;
+                    font-size: 30px;
+                    text-align: center; 
+                }
+            }
+            .col-lg-4 {
+                img {
+                    padding-left: 15%;
+                    padding-right: 15%;
+                }
+                h3 {
+                    
+                }
+                button {
+
+                }
+            }
+        }
+    }
+
+    .seccion-catalogo {
+        .card-body {
+            h3 {
+                font-size: 30px;
+                text-align: center;
+            }
+            button {
+                font-size: 15px;
+            }
+        }
     }
 
 }
