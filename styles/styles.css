@@ -330,9 +330,10 @@ footer {
   width: 100%;
   height: auto;
   position: relative;
-  background-image: url(/assets/elementos-home/Imagen-somos-conductores.png);
+  background-image: url("/assets/elementos-home/fondo-seccion-somos.png");
   background-size: cover;
   background-position: center;
+  padding-bottom: 15vh;
 }
 .seccion-somos .col-6 {
   width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
@@ -376,10 +377,6 @@ footer {
 .seccion-somos .col-6 .card-body .btn:hover {
   background-color: gray;
   color: white;
-}
-.seccion-somos img {
-  width: 100%;
-  height: auto;
 }
 
 /*--------------ESTILOS SECCION CARDS DE INFORMACION---------------*/
@@ -717,7 +714,7 @@ footer {
 .seccion-catalogo {
   width: 90%;
   height: auto;
-  background-image: url("/assets/elementos-home/fondo-catalogo.jpg");
+  background-image: url("/assets/elementos-home/fondo-catalogo-rectangular.png");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
