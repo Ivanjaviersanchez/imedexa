@@ -5,11 +5,14 @@
     background-image: url("/assets/elementos-home/fondo-seccion-somos.png");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     padding-bottom: 22vh;
+    
     .col-6 {
         width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
         max-width: 100%; /* Evita el desbordamiento */
         box-sizing: border-box; /* Incluye el padding dentro del ancho total */
+        
         .card-body {
             @include tamanio(100%,70vh);
             display: flex;
@@ -209,7 +212,7 @@
     background-position: center;
     background-size: 100% 100%;
     justify-items: center;
-   
+
     .estilos-servicio {
         @include tamanio(80%,auto); 
         .card {
@@ -386,7 +389,7 @@
 /*--------------ESTILOS SECCION CATALOGO---------------*/
 
 .seccion-catalogo {
-    @include tamanio(90%,auto);
+    @include tamanio(80%,auto);
     background-image: url("/assets/elementos-home/fondo-catalogo-rectangular.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -395,8 +398,6 @@
     padding-bottom: 10vh;
     margin-top: 2vh;
     margin-bottom: 10vh;
-    
-    border: solid 1px black;
     border-radius: 20px; /* Ajusta el valor para el radio de la curva */
    
     h3 {

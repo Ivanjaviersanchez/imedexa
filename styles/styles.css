@@ -248,7 +248,7 @@ img {
 
 /* ESTILOS DEL CONTENDOR */
 .container-fluid {
-  padding: 1vh;
+  padding: 0;
   flex-grow: 1; /*el contenedor ocupe todo el espacio disponible */
 }
 
@@ -333,6 +333,7 @@ footer {
   background-image: url("/assets/elementos-home/fondo-seccion-somos.png");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   padding-bottom: 22vh;
 }
 .seccion-somos .col-6 {
@@ -712,7 +713,7 @@ footer {
 
 /*--------------ESTILOS SECCION CATALOGO---------------*/
 .seccion-catalogo {
-  width: 90%;
+  width: 80%;
   height: auto;
   background-image: url("/assets/elementos-home/fondo-catalogo-rectangular.png");
   background-repeat: no-repeat;
@@ -722,7 +723,6 @@ footer {
   padding-bottom: 10vh;
   margin-top: 2vh;
   margin-bottom: 10vh;
-  border: solid 1px black;
   border-radius: 20px; /* Ajusta el valor para el radio de la curva */
 }
 .seccion-catalogo h3 {
