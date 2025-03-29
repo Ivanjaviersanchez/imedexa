@@ -45,12 +45,15 @@
     height: auto;
   }
   .seccion-presencia-mapa .row .presencia-global h2 {
-    font-size: 30px;
+    font-size: 26px;
+    margin-bottom: 40vh;
   }
   .seccion-presencia-mapa .row .presencia-global p {
     font-size: 15px;
     padding: 0;
     margin: 0;
+    padding-left: 12%;
+    padding-right: 12%;
   }
   .seccion-presencia-mapa .row .presencia-global .imagenes-superpuestas {
     padding: 0;
@@ -74,14 +77,20 @@
   .seccion-presencia-mapa .row .presencia-proyectos {
     width: 100%;
     height: auto;
-    justify-content: space-around;
-    padding-top: 55vh;
+    /* justify-content: space-around; */
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
   .seccion-presencia-mapa .row .presencia-proyectos .presencia {
-    width: 90%;
+    width: 100%;
     height: auto;
     padding-left: 10%;
     padding-right: 10%;
+    margin-bottom: 5vh;
+    text-align: center;
+    justify-items: center;
   }
   .seccion-presencia-mapa .row .presencia-proyectos .presencia h3 {
     font-size: 30px;
@@ -92,10 +101,13 @@
     text-align: center;
   }
   .seccion-presencia-mapa .row .presencia-proyectos .proyectos {
-    width: 75%;
+    width: 100%;
     height: auto;
-    margin-top: 8vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 0;
     text-align: center;
+    justify-items: center;
   }
   .seccion-presencia-mapa .row .presencia-proyectos .proyectos h3 {
     font-size: 30px;
@@ -158,6 +170,10 @@
     padding: 0;
     padding-left: 15%;
     padding-right: 15%;
+  }
+  .seccion-fabricas {
+    width: 100%;
+    height: auto;
   }
   .seccion-fabricas .row .col .card .card-body h3 {
     font-size: 30px;
@@ -424,9 +440,10 @@ footer {
   margin: 0;
   padding: 0;
   margin-top: 10vh;
+  position: relative;
 }
 .seccion-presencia-mapa img {
-  width: 99%;
+  width: 100%;
   height: auto;
   object-fit: cover;
   position: absolute;
@@ -440,7 +457,7 @@ footer {
   text-align: center;
   position: relative;
   z-index: 2; /* Asegura que el contenido de .presencia-global quede por encima de la imagen de fondo */
-  padding-top: 6vh;
+  padding-top: 5vh;
 }
 .seccion-presencia-mapa .presencia-global h2 {
   color: black;
@@ -481,8 +498,11 @@ footer {
   width: 100%;
   height: auto;
   justify-content: space-around;
-  padding-top: 66vh;
-  padding-bottom: 10vh;
+  padding-top: 80vh;
+  padding-bottom: 6vh;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
   /* Estilo por defecto para el botón */
   /* Estilo cuando el cursor pasa sobre el botón */
 }
@@ -503,7 +523,7 @@ footer {
   text-align: left;
 }
 .seccion-presencia-mapa .presencia-proyectos .proyectos {
-  margin-top: 20vh;
+  margin-top: 25vh;
   text-align: center;
 }
 .seccion-presencia-mapa .presencia-proyectos .proyectos h3 {
@@ -522,7 +542,7 @@ footer {
 .seccion-presencia-mapa .presencia-proyectos .proyectos button {
   background-color: #2A9A9A;
   border-color: #2A9A9A;
-  margin-left: 30vh;
+  margin-left: 38vh;
 }
 .seccion-presencia-mapa .presencia-proyectos .proyectos .btn {
   transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el fondo y el color del texto */
@@ -536,16 +556,18 @@ footer {
 .seccion-servicio-conoce {
   width: 100%;
   height: auto;
-  background-image: url("/assets/elementos-home/fondo-servicio-conoce.png");
+  background-image: url("/assets/elementos-home/FONDO RECTANGULAR.png");
   background-size: cover;
   background-position: center;
   background-size: 100% 100%;
   justify-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
   /* Estilo por defecto para los botones dentro de los contenedores */
   /* Transición suave para los botones */
 }
 .seccion-servicio-conoce .estilos-servicio {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 .seccion-servicio-conoce .estilos-servicio .card {
@@ -570,7 +592,7 @@ footer {
   border-color: #D7BE0F;
 }
 .seccion-servicio-conoce .estilos-conoce {
-  width: 80%;
+  width: 100%;
   height: auto;
   text-align: right;
 }

@@ -25,7 +25,6 @@
         .row {
             h2 {
                 @include tamanio(100%,auto);
-                
                 padding: 0;
                 font-size: 22px;
                 margin-bottom: 8vh;
@@ -49,19 +48,22 @@
     }
 
     .seccion-presencia-mapa {
-        @include tamanio(100%,auto);
+        @include tamanio(100%,auto);     
         .row {
             img {
                 
             }
             .presencia-global {
                 h2 {
-                    font-size: 30px;
+                    font-size: 26px;
+                    margin-bottom: 40vh;
                 }
                 p {
                     font-size: 15px;
                     padding: 0;
                     margin: 0;
+                    padding-left: 12%;
+                    padding-right: 12%;
                 }
                 .imagenes-superpuestas {
                     padding: 0;
@@ -83,12 +85,19 @@
             }
             .presencia-proyectos {
                 @include tamanio(100%, auto);
-                justify-content: space-around;
-                padding-top: 55vh;
+                /* justify-content: space-around; */
+                
+                padding-top: 10vh;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
                 .presencia {
-                    @include tamanio(90%,auto);
+                    @include tamanio(100%,auto);
                     padding-left: 10%;
                     padding-right: 10%;
+                    margin-bottom: 5vh;
+                    text-align: center;
+                    justify-items: center;
                     h3 {
                         font-size: 30px;
                         text-align: center;
@@ -99,9 +108,12 @@
                     }
                 }
                 .proyectos {
-                    @include tamanio(75%,auto);
-                    margin-top: 8vh;
+                    @include tamanio(100%,auto);
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    margin-top: 0;
                     text-align: center;
+                    justify-items: center;
                     h3 {
                         font-size: 30px;
                         text-align: center;
@@ -122,8 +134,8 @@
     }
 
     .seccion-servicio-conoce {
-        
         .estilos-servicio {
+
             .card {
                 .col-md-5 {
                     img {
@@ -157,7 +169,7 @@
         .estilos-conoce {
             margin-top: 10vh;
             .card {
-                .col-md-7 {
+                .col-md-7 { 
                     .card-body {
                         text-align: center;
                         h2 {
@@ -181,6 +193,8 @@
                         padding: 0;
                         padding-left: 15%;
                         padding-right: 15%;
+                        
+                        
                     }
                 }
             }
@@ -189,6 +203,8 @@
     }
 
     .seccion-fabricas {
+        @include tamanio(100%,auto); 
+        
         .row {
             .col {
                 .card {
