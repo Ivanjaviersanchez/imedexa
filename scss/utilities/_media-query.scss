@@ -1,24 +1,30 @@
 /* Media query para mobile */
 @media (max-width: 768px) {
+    /*GENERAL*/
     
+
     .seccion-somos {
-        .row {
-            .col-6 {
-                .card-body {
+        @include tamanio(100%,auto);
+        .col-12 {    
+            .card-body {
+                align-items: left;
+                .col-12 {
                     h1 {
                         font-size: 30px;
+                        text-align: left;   
                         
                     }
                     p {
-                        font-size: 20px;
+                        font-size: 15px;
+                        text-align: left;      
                     }
                     a {
                         font-size: 20px;
+                        text-align: center;    
                     }
-                
-                }
+                }  
             }
-        }
+        }        
     }
 
     .seccion-cards-info {
@@ -26,10 +32,10 @@
             h2 {
                 @include tamanio(100%,auto);
                 padding: 0;
-                font-size: 22px;
+                font-size: 30px;
                 margin-bottom: 8vh;
-                padding-left: 10%;
-                padding-right: 10%;
+                padding-left: 5%;
+                padding-right: 5%;
             }
             .alineado-cards {
                 margin-bottom: 6vh;
@@ -55,7 +61,7 @@
             }
             .presencia-global {
                 h2 {
-                    font-size: 26px;
+                    font-size: 30px;
                     margin-bottom: 40vh;
                 }
                 p {
@@ -64,23 +70,6 @@
                     margin: 0;
                     padding-left: 12%;
                     padding-right: 12%;
-                }
-                .imagenes-superpuestas {
-                    padding: 0;
-                    margin: 0;
-                    display: flex;
-                    img.imagen-base {
-                        @include tamanio(100%,auto);
-                        padding: 0;
-                        margin: 0;
-                    }
-                    img.imagen-superpuesta {
-                        @include tamanio(30%,auto);
-                        padding: 0;
-                        margin: 0;
-                        margin-top: 28vh;
-                        margin-left: 27vh;
-                    }
                 }
             }
             .presencia-proyectos {

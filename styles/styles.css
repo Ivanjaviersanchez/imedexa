@@ -9,23 +9,34 @@
 }
 /* Media query para mobile */
 @media (max-width: 768px) {
-  .seccion-somos .row .col-6 .card-body h1 {
+  /*GENERAL*/
+  .seccion-somos {
+    width: 100%;
+    height: auto;
+  }
+  .seccion-somos .col-12 .card-body {
+    align-items: left;
+  }
+  .seccion-somos .col-12 .card-body .col-12 h1 {
     font-size: 30px;
+    text-align: left;
   }
-  .seccion-somos .row .col-6 .card-body p {
-    font-size: 20px;
+  .seccion-somos .col-12 .card-body .col-12 p {
+    font-size: 15px;
+    text-align: left;
   }
-  .seccion-somos .row .col-6 .card-body a {
+  .seccion-somos .col-12 .card-body .col-12 a {
     font-size: 20px;
+    text-align: center;
   }
   .seccion-cards-info .row h2 {
     width: 100%;
     height: auto;
     padding: 0;
-    font-size: 22px;
+    font-size: 30px;
     margin-bottom: 8vh;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .seccion-cards-info .row .alineado-cards {
     margin-bottom: 6vh;
@@ -45,7 +56,7 @@
     height: auto;
   }
   .seccion-presencia-mapa .row .presencia-global h2 {
-    font-size: 26px;
+    font-size: 30px;
     margin-bottom: 40vh;
   }
   .seccion-presencia-mapa .row .presencia-global p {
@@ -54,25 +65,6 @@
     margin: 0;
     padding-left: 12%;
     padding-right: 12%;
-  }
-  .seccion-presencia-mapa .row .presencia-global .imagenes-superpuestas {
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  .seccion-presencia-mapa .row .presencia-global .imagenes-superpuestas img.imagen-base {
-    width: 100%;
-    height: auto;
-    padding: 0;
-    margin: 0;
-  }
-  .seccion-presencia-mapa .row .presencia-global .imagenes-superpuestas img.imagen-superpuesta {
-    width: 30%;
-    height: auto;
-    padding: 0;
-    margin: 0;
-    margin-top: 28vh;
-    margin-left: 27vh;
   }
   .seccion-presencia-mapa .row .presencia-proyectos {
     width: 100%;
@@ -229,10 +221,6 @@ body {
   font-style: normal;
 }
 
-h1 {
-  font-size: 1.5em;
-}
-
 h2, h3 {
   text-align: left;
   /* background-color: rgb(44, 45, 45); */
@@ -352,13 +340,13 @@ footer {
   background-repeat: no-repeat;
   padding-bottom: 22vh;
 }
-.seccion-somos .col-6 {
+.seccion-somos .col-12 {
   width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
   max-width: 100%; /* Evita el desbordamiento */
   box-sizing: border-box; /* Incluye el padding dentro del ancho total */
   /* Estilo cuando el cursor pasa sobre el enlace */
 }
-.seccion-somos .col-6 .card-body {
+.seccion-somos .col-12 .card-body {
   width: 100%;
   height: 70vh;
   display: flex;
@@ -366,21 +354,21 @@ footer {
   justify-content: center; /* Asegura que el contenido se alinee verticalmente */
   text-align: left;
   color: white;
-  padding: 6vh;
   padding-top: 15vh;
+  padding-left: 3%;
+  padding-right: 20%;
 }
-.seccion-somos .col-6 .card-body h1 {
+.seccion-somos .col-12 .card-body .col-12 h1 {
   width: 100%;
   height: auto;
   font-size: 45px;
   font-family: "New Astro", sans-serif;
 }
-.seccion-somos .col-6 .card-body p {
-  width: 100%;
-  height: auto;
+.seccion-somos .col-12 .card-body .col-12 p {
+  /* @include tamanio(85vh,auto); */
   font-size: 22px;
 }
-.seccion-somos .col-6 .card-body a {
+.seccion-somos .col-12 .card-body .col-12 a {
   width: 30vh;
   height: auto;
   text-align: center;
@@ -388,10 +376,10 @@ footer {
   background-color: #D7BE0F;
   border-color: #D7BE0F;
 }
-.seccion-somos .col-6 .card-body .btn {
+.seccion-somos .col-12 .card-body .btn {
   transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el fondo y el color del texto */
 }
-.seccion-somos .col-6 .card-body .btn:hover {
+.seccion-somos .col-12 .card-body .btn:hover {
   background-color: gray;
   color: white;
 }
@@ -405,7 +393,7 @@ footer {
 .seccion-cards-info h2 {
   color: black;
   text-align: center;
-  font-size: 28px;
+  font-size: 40px;
   font-family: "New Astro", sans-serif;
   padding-left: 20vh;
   padding-right: 20vh;
@@ -462,37 +450,14 @@ footer {
 .seccion-presencia-mapa .presencia-global h2 {
   color: black;
   text-align: center;
-  font-size: 38px;
+  font-size: 40px;
   font-family: "New Astro", sans-serif;
 }
 .seccion-presencia-mapa .presencia-global p {
-  color: black;
+  font-size: 15px;
+  font-weight: bold;
   padding-left: 28%;
   padding-right: 28%;
-}
-.seccion-presencia-mapa .presencia-global .imagenes-superpuestas {
-  position: relative; /* Necesario para que las imágenes absolutas se posicionen dentro de este contenedor */
-  display: inline-block;
-  z-index: 3; /* Asegura que las imágenes estén encima de la imagen de fondo */
-  width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho disponible */
-  height: auto; /* Permite que el contenedor ajuste su altura según el contenido */
-  padding-right: 140vh;
-}
-.seccion-presencia-mapa .presencia-global .imagenes-superpuestas img.imagen-base {
-  width: 65%;
-  height: auto;
-  z-index: 1; /* Asegura que la imagen base quede debajo de la superpuesta */
-}
-.seccion-presencia-mapa .presencia-global .imagenes-superpuestas img.imagen-superpuesta {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20%;
-  height: auto;
-  opacity: 1;
-  margin-top: 48vh;
-  margin-left: 83vh;
-  z-index: 2; /* Asegura que la imagen superpuesta esté encima de la imagen base */
 }
 .seccion-presencia-mapa .presencia-proyectos {
   width: 100%;
@@ -521,6 +486,7 @@ footer {
   width: 82%;
   height: auto;
   text-align: left;
+  font-size: 20px;
 }
 .seccion-presencia-mapa .presencia-proyectos .proyectos {
   margin-top: 25vh;
@@ -538,11 +504,13 @@ footer {
   width: 90%;
   height: auto;
   text-align: right;
+  font-size: 20px;
 }
 .seccion-presencia-mapa .presencia-proyectos .proyectos button {
   background-color: #2A9A9A;
   border-color: #2A9A9A;
-  margin-left: 38vh;
+  margin-left: 34vh;
+  font-size: 20px;
 }
 .seccion-presencia-mapa .presencia-proyectos .proyectos .btn {
   transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el fondo y el color del texto */
@@ -585,9 +553,13 @@ footer {
   font-size: 38px;
   font-family: "New Astro", sans-serif;
 }
+.seccion-servicio-conoce .estilos-servicio .card p {
+  font-size: 18px;
+}
 .seccion-servicio-conoce .estilos-servicio .card button {
   width: 30%;
   height: auto;
+  font-size: 18px;
   background-color: #D7BE0F;
   border-color: #D7BE0F;
 }
@@ -606,9 +578,13 @@ footer {
   font-family: "New Astro", sans-serif;
   text-align: right;
 }
+.seccion-servicio-conoce .estilos-conoce .card p {
+  font-size: 18px;
+}
 .seccion-servicio-conoce .estilos-conoce .card button {
   width: 30%;
   height: auto;
+  font-size: 18px;
   background-color: #D7BE0F;
   border-color: #D7BE0F;
 }
@@ -642,7 +618,7 @@ footer {
   box-shadow: none; /* Elimina las sombras predeterminadas si las hay */
 }
 .seccion-fabricas h3 {
-  font-size: 38px;
+  font-size: 35px;
   font-family: "New Astro", sans-serif;
   text-align: center;
 }
@@ -653,6 +629,7 @@ footer {
 .seccion-fabricas button {
   width: 60%;
   height: auto;
+  font-size: 20px;
   background-color: #D7BE0F;
   border-color: #D7BE0F;
   margin-top: 1vh;

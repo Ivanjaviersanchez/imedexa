@@ -1,4 +1,5 @@
 /*--------------ESTILOS SECCION SOMOS---------------*/
+
 .seccion-somos {
     @include tamanio(100%,auto);
     position: relative;
@@ -8,7 +9,7 @@
     background-repeat: no-repeat;
     padding-bottom: 22vh;
     
-    .col-6 {
+    .col-12 {
         width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
         max-width: 100%; /* Evita el desbordamiento */
         box-sizing: border-box; /* Incluye el padding dentro del ancho total */
@@ -20,24 +21,26 @@
             justify-content: center;  /* Asegura que el contenido se alinee verticalmente */
             text-align: left;
             color: white;
-            padding: 6vh;
             padding-top: 15vh;
-            h1 {
-                @include tamanio(100%,auto);
-                font-size: 45px; 
-                font-family: 'New Astro', sans-serif;
-            }
-            p {
-                @include tamanio(100%,auto);
-                font-size: 22px;
-                
-            }
-            a {
-                @include tamanio(30vh,auto);
-                text-align: center;
-                font-size: 22px;
-                background-color: #D7BE0F;
-                border-color: #D7BE0F;
+            padding-left: 3%;
+            padding-right: 20%;
+            .col-12 {
+                h1 {
+                    @include tamanio(100%,auto);
+                    font-size: 45px; 
+                    font-family: 'New Astro', sans-serif;
+                }
+                p {
+                    /* @include tamanio(85vh,auto); */
+                    font-size: 22px;
+                }
+                a {
+                    @include tamanio(30vh,auto);
+                    text-align: center;
+                    font-size: 22px;
+                    background-color: #D7BE0F;
+                    border-color: #D7BE0F;
+                }
             }
         }
         .card-body .btn {
@@ -58,7 +61,7 @@
     h2 {
         color: black;
         text-align: center;
-        font-size: 28px;
+        font-size: 40px;
         font-family: 'New Astro', sans-serif;
         padding-left: 20vh;
         padding-right: 20vh;
@@ -110,39 +113,16 @@
         h2 {
             color: black;
             text-align: center;
-            font-size: 38px;
+            font-size: 40px;
             font-family: 'New Astro', sans-serif;
         }
 
         p {
-            color: black;
+            font-size: 15px;
+            font-weight: bold;
+           
             padding-left: 28%;
             padding-right: 28%;   
-        }
-
-        .imagenes-superpuestas {
-            position: relative; /* Necesario para que las imágenes absolutas se posicionen dentro de este contenedor */
-            display: inline-block;
-            z-index: 3; /* Asegura que las imágenes estén encima de la imagen de fondo */
-            width: 100%; /* Asegura que el contenedor ocupe el 100% del ancho disponible */
-            height: auto; /* Permite que el contenedor ajuste su altura según el contenido */
-            padding-right: 140vh;
-
-            img.imagen-base {
-                @include tamanio(65%, auto);
-                z-index: 1; /* Asegura que la imagen base quede debajo de la superpuesta */
-            }
-
-            img.imagen-superpuesta {
-                position: absolute;
-                top: 0;
-                left: 0;
-                @include tamanio(20%, auto);
-                opacity: 1;
-                margin-top: 48vh;
-                margin-left: 83vh;
-                z-index: 2; /* Asegura que la imagen superpuesta esté encima de la imagen base */
-            }
         }
     }
     .presencia-proyectos {
@@ -165,6 +145,7 @@
             p {
                 @include tamanio(82%, auto); 
                 text-align: left;
+                font-size: 20px;
             }
         }
 
@@ -182,13 +163,14 @@
             p {
                 @include tamanio(90%, auto);
                 text-align: right;
+                font-size: 20px;
             }
 
             button {
                 background-color: #2A9A9A;
                 border-color: #2A9A9A;
-                margin-left: 38vh;
-                
+                margin-left: 34vh;
+                font-size: 20px;
             }
         }
         /* Estilo por defecto para el botón */
@@ -232,10 +214,11 @@
                 font-family: 'New Astro', sans-serif;
             }
             p {
-              
+                font-size: 18px;
             }
             button {
                 @include tamanio(30%,auto);
+                font-size: 18px;
                 background-color: #D7BE0F;
                 border-color: #D7BE0F;
             }
@@ -257,10 +240,11 @@
                 text-align: right;
             }
             p {
-                
+                font-size: 18px; 
             }
             button {
                 @include tamanio(30%,auto); 
+                font-size: 18px;
                 background-color: #D7BE0F; 
                 border-color: #D7BE0F;
             }
@@ -299,7 +283,7 @@
         box-shadow: none; /* Elimina las sombras predeterminadas si las hay */
     }
     h3 {
-        font-size: 38px;
+        font-size: 35px;
         font-family: 'New Astro', sans-serif;
         text-align: center;
     }
@@ -308,6 +292,7 @@
     }
     button {
         @include tamanio(60%,auto); 
+        font-size: 20px;
         background-color: #D7BE0F; 
         border-color: #D7BE0F;
         margin-top: 1vh; 
