@@ -7,6 +7,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "NeueHaasDisplay"; /* Nombre con el que usarás la fuente */
+  src: url("/assets/fonts/NeueHaasDisplayRoman.ttf") format("truetype"); /* Ruta al archivo .ttf */
+  font-weight: normal;
+  font-style: normal;
+}
 /* Media query para mobile */
 @media (max-width: 768px) {
   /*GENERAL*/
@@ -367,12 +373,14 @@ footer {
 .seccion-somos .col-12 .card-body .col-12 p {
   /* @include tamanio(85vh,auto); */
   font-size: 22px;
+  font-family: "NeueHaasDisplay", sans-serif;
 }
 .seccion-somos .col-12 .card-body .col-12 a {
   width: 30vh;
   height: auto;
   text-align: center;
   font-size: 22px;
+  font-family: "NeueHaasDisplay", sans-serif;
   background-color: #D7BE0F;
   border-color: #D7BE0F;
 }
@@ -418,6 +426,7 @@ footer {
   width: 80%;
   height: auto;
   text-align: center;
+  font-family: "NeueHaasDisplay", sans-serif;
 }
 
 /*--------------ESTILOS SECCION PRESENCIA/MAPA---------------*/
@@ -456,6 +465,7 @@ footer {
 .seccion-presencia-mapa .presencia-global p {
   font-size: 15px;
   font-weight: bold;
+  font-family: "NeueHaasDisplay", sans-serif;
   padding-left: 28%;
   padding-right: 28%;
 }
@@ -487,6 +497,7 @@ footer {
   height: auto;
   text-align: left;
   font-size: 20px;
+  font-family: "NeueHaasDisplay", sans-serif;
 }
 .seccion-presencia-mapa .presencia-proyectos .proyectos {
   margin-top: 25vh;
@@ -505,12 +516,14 @@ footer {
   height: auto;
   text-align: right;
   font-size: 20px;
+  font-family: "NeueHaasDisplay", sans-serif;
 }
 .seccion-presencia-mapa .presencia-proyectos .proyectos button {
   background-color: #2A9A9A;
   border-color: #2A9A9A;
   margin-left: 34vh;
   font-size: 20px;
+  font-family: "NeueHaasDisplay", sans-serif;
 }
 .seccion-presencia-mapa .presencia-proyectos .proyectos .btn {
   transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el fondo y el color del texto */
@@ -555,11 +568,13 @@ footer {
 }
 .seccion-servicio-conoce .estilos-servicio .card p {
   font-size: 18px;
+  font-family: "NeueHaasDisplay", sans-serif;
 }
 .seccion-servicio-conoce .estilos-servicio .card button {
   width: 30%;
   height: auto;
   font-size: 18px;
+  font-family: "NeueHaasDisplay", sans-serif;
   background-color: #D7BE0F;
   border-color: #D7BE0F;
 }
@@ -580,11 +595,13 @@ footer {
 }
 .seccion-servicio-conoce .estilos-conoce .card p {
   font-size: 18px;
+  font-family: "NeueHaasDisplay", sans-serif;
 }
 .seccion-servicio-conoce .estilos-conoce .card button {
   width: 30%;
   height: auto;
   font-size: 18px;
+  font-family: "NeueHaasDisplay", sans-serif;
   background-color: #D7BE0F;
   border-color: #D7BE0F;
 }
@@ -630,6 +647,7 @@ footer {
   width: 60%;
   height: auto;
   font-size: 20px;
+  font-family: "NeueHaasDisplay", sans-serif;
   background-color: #D7BE0F;
   border-color: #D7BE0F;
   margin-top: 1vh;
@@ -690,10 +708,12 @@ footer {
 }
 .seccion-proyectos-destacados .row .col-lg-4 h4 {
   font-size: 20px;
+  font-family: "NeueHaasDisplay", sans-serif;
   text-align: center;
   color: black;
 }
 .seccion-proyectos-destacados .row .col-lg-4 button {
+  font-family: "NeueHaasDisplay", sans-serif;
   background-color: #D7BE0F;
   border-color: #D7BE0F;
   margin-top: 1vh;
@@ -732,6 +752,7 @@ footer {
   margin-bottom: 4vh;
 }
 .seccion-catalogo button {
+  font-family: "NeueHaasDisplay", sans-serif;
   background-color: #D7BE0F;
   border-color: #D7BE0F;
   margin-top: 1vh;

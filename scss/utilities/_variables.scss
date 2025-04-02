@@ -15,3 +15,9 @@ $color-3: rgb(184, 246, 231);
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'NeueHaasDisplay'; /* Nombre con el que usarás la fuente */
+    src: url('/assets/fonts/NeueHaasDisplayRoman.ttf') format('truetype'); /* Ruta al archivo .ttf */
+    font-weight: normal;
+    font-style: normal;
+}

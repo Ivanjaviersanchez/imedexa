@@ -33,13 +33,16 @@
                 p {
                     /* @include tamanio(85vh,auto); */
                     font-size: 22px;
+                    font-family: 'NeueHaasDisplay', sans-serif;
                 }
                 a {
                     @include tamanio(30vh,auto);
                     text-align: center;
                     font-size: 22px;
+                    font-family: 'NeueHaasDisplay', sans-serif;
                     background-color: #D7BE0F;
                     border-color: #D7BE0F;
+                    
                 }
             }
         }
@@ -83,6 +86,7 @@
             color: black;
             @include tamanio(80%,auto);
             text-align: center;
+            font-family: 'NeueHaasDisplay', sans-serif;
         }
     }
 }
@@ -120,7 +124,7 @@
         p {
             font-size: 15px;
             font-weight: bold;
-           
+            font-family: 'NeueHaasDisplay', sans-serif;
             padding-left: 28%;
             padding-right: 28%;   
         }
@@ -146,6 +150,7 @@
                 @include tamanio(82%, auto); 
                 text-align: left;
                 font-size: 20px;
+                font-family: 'NeueHaasDisplay', sans-serif;
             }
         }
 
@@ -164,6 +169,7 @@
                 @include tamanio(90%, auto);
                 text-align: right;
                 font-size: 20px;
+                font-family: 'NeueHaasDisplay', sans-serif;
             }
 
             button {
@@ -171,6 +177,7 @@
                 border-color: #2A9A9A;
                 margin-left: 34vh;
                 font-size: 20px;
+                font-family: 'NeueHaasDisplay', sans-serif;
             }
         }
         /* Estilo por defecto para el botón */
@@ -215,10 +222,12 @@
             }
             p {
                 font-size: 18px;
+                font-family: 'NeueHaasDisplay', sans-serif;
             }
             button {
                 @include tamanio(30%,auto);
                 font-size: 18px;
+                font-family: 'NeueHaasDisplay', sans-serif;
                 background-color: #D7BE0F;
                 border-color: #D7BE0F;
             }
@@ -241,10 +250,12 @@
             }
             p {
                 font-size: 18px; 
+                font-family: 'NeueHaasDisplay', sans-serif;
             }
             button {
                 @include tamanio(30%,auto); 
                 font-size: 18px;
+                font-family: 'NeueHaasDisplay', sans-serif;
                 background-color: #D7BE0F; 
                 border-color: #D7BE0F;
             }
@@ -293,6 +304,7 @@
     button {
         @include tamanio(60%,auto); 
         font-size: 20px;
+        font-family: 'NeueHaasDisplay', sans-serif;
         background-color: #D7BE0F; 
         border-color: #D7BE0F;
         margin-top: 1vh; 
@@ -350,10 +362,12 @@
             }
             h4 {
                 font-size: 20px;
+                font-family: 'NeueHaasDisplay', sans-serif;
                 text-align: center; 
                 color: black;    
             }
             button {
+                font-family: 'NeueHaasDisplay', sans-serif;
                 background-color: #D7BE0F; 
                 border-color: #D7BE0F;
                 margin-top: 1vh; 
@@ -396,6 +410,7 @@
         margin-bottom: 4vh;
     }
     button {
+        font-family: 'NeueHaasDisplay', sans-serif;
         background-color: #D7BE0F; 
         border-color: #D7BE0F;
         margin-top: 1vh; 
