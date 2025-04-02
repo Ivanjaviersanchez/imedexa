@@ -120,6 +120,12 @@
     margin-left: 0vh;
     margin-right: 0;
   }
+  .seccion-servicio-conoce {
+    /* background-image: url("/assets/elementos-home/imagen-madina.png");
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%; */
+  }
   .seccion-servicio-conoce .estilos-servicio .card .col-md-5 img {
     width: 100%;
     height: auto;
@@ -537,19 +543,46 @@ footer {
 .seccion-servicio-conoce {
   width: 100%;
   height: auto;
-  background-image: url("/assets/elementos-home/FONDO RECTANGULAR.png");
+  padding: 0;
+  margin: 0;
+  /* background-image: url("/assets/elementos-home/FONDO\ RECTANGULAR.png");
   background-size: cover;
   background-position: center;
-  background-size: 100% 100%;
+  background-size: 100% 100%; */
   justify-items: center;
-  padding-left: 10%;
-  padding-right: 10%;
+  /* padding-left: 10%;
+  padding-right: 10%;  */
+  position: relative;
   /* Estilo por defecto para los botones dentro de los contenedores */
   /* Transición suave para los botones */
+}
+.seccion-servicio-conoce .fondo {
+  position: absolute; /* Hace que la imagen se posicione en relación al contenedor */
+  top: 0;
+  left: 0;
+  width: 100%; /* Asegura que la imagen ocupe el 100% del ancho del contenedor */
+  height: 100%; /* Asegura que la imagen ocupe el 100% de la altura del contenedor */
+  z-index: 1; /* La imagen estará detrás del contenido */
+  margin: 0;
+  padding: 0;
+}
+.seccion-servicio-conoce .fondo img {
+  width: 100%;
+  height: auto;
+  /* Esto puede ser innecesario si ya estás usando position absoluta */
+  object-fit: cover; /* Esto asegura que la imagen cubra el área del contenedor sin distorsión */
+  position: absolute; /* La imagen se ajusta al contenedor de fondo */
+  top: 0;
+  left: 0;
+  z-index: -1; /* La imagen queda detrás del contenido */
 }
 .seccion-servicio-conoce .estilos-servicio {
   width: 100%;
   height: auto;
+  z-index: 2;
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .seccion-servicio-conoce .estilos-servicio .card {
   background: transparent; /* Hace el fondo de las tarjetas transparente */
@@ -565,6 +598,7 @@ footer {
 .seccion-servicio-conoce .estilos-servicio .card h2 {
   font-size: 38px;
   font-family: "New Astro", sans-serif;
+  padding-top: 10vh;
 }
 .seccion-servicio-conoce .estilos-servicio .card p {
   font-size: 18px;
@@ -582,6 +616,10 @@ footer {
   width: 100%;
   height: auto;
   text-align: right;
+  z-index: 2;
+  position: relative;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .seccion-servicio-conoce .estilos-conoce .card {
   background: transparent; /* Hace el fondo de las tarjetas transparente */
@@ -592,6 +630,7 @@ footer {
   font-size: 38px;
   font-family: "New Astro", sans-serif;
   text-align: right;
+  padding-top: 10vh;
 }
 .seccion-servicio-conoce .estilos-conoce .card p {
   font-size: 18px;
@@ -624,7 +663,7 @@ footer {
   width: 100%;
   height: auto;
   text-align: center;
-  margin-top: 4vh;
+  margin-top: 35vh;
 }
 .seccion-fabricas .posicion-fabricas {
   padding-top: 15vh;

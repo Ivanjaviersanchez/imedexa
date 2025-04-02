@@ -121,9 +121,14 @@
         }
 
     }
-
+    
     .seccion-servicio-conoce {
+        /* background-image: url("/assets/elementos-home/imagen-madina.png");
+        background-size: cover;
+        background-position: center;
+        background-size: 100% 100%; */
         .estilos-servicio {  
+            
             .card {
                 .col-md-5 {
                     img {
@@ -190,6 +195,8 @@
 
         }
     }
+    
+
 
     .seccion-fabricas {
         @include tamanio(100%,auto); 

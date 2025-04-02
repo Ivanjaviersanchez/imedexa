@@ -194,19 +194,47 @@
 }
 
 /*--------------ESTILOS SECCION SERVICIO/CONOCE---------------*/
+
 .seccion-servicio-conoce {
     @include tamanio(100%,auto);
-    background-image: url("/assets/elementos-home/FONDO\ RECTANGULAR.png");
+    padding: 0;
+    margin: 0;
+   
+    /* background-image: url("/assets/elementos-home/FONDO\ RECTANGULAR.png");
     background-size: cover;
     background-position: center;
-    background-size: 100% 100%;
+    background-size: 100% 100%; */  
     justify-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    /* padding-left: 10%;
+    padding-right: 10%;  */
+    position: relative;
+    .fondo {
+        position: absolute; /* Hace que la imagen se posicione en relación al contenedor */
+        top: 0;
+        left: 0;
+        width: 100%; /* Asegura que la imagen ocupe el 100% del ancho del contenedor */
+        height: 100%; /* Asegura que la imagen ocupe el 100% de la altura del contenedor */
+        z-index: 1; /* La imagen estará detrás del contenido */
+        margin: 0;
+        padding: 0;
+        img {
+            @include tamanio(100%, auto); /* Esto puede ser innecesario si ya estás usando position absoluta */
+            object-fit: cover; /* Esto asegura que la imagen cubra el área del contenedor sin distorsión */
+            position: absolute; /* La imagen se ajusta al contenedor de fondo */
+            top: 0;
+            left: 0;
+            z-index: -1; /* La imagen queda detrás del contenido */
+
+        }
+    }
+    
 
     .estilos-servicio {
         @include tamanio(100%,auto); 
-
+        z-index: 2;
+        position: relative;
+        padding-left: 5%;
+        padding-right: 5%;
         .card {
             background: transparent; /* Hace el fondo de las tarjetas transparente */
             border: none; /* Elimina cualquier borde sólido de la tarjeta */
@@ -219,6 +247,7 @@
             h2 {
                 font-size: 38px;
                 font-family: 'New Astro', sans-serif;
+                padding-top: 10vh;
             }
             p {
                 font-size: 18px;
@@ -239,6 +268,10 @@
     .estilos-conoce {
         @include tamanio(100%,auto);
         text-align: right;
+        z-index: 2;
+        position: relative;
+        padding-left: 5%;
+        padding-right: 5%;
         .card {
             background: transparent; /* Hace el fondo de las tarjetas transparente */
             border: none; /* Elimina cualquier borde sólido de la tarjeta */
@@ -247,6 +280,7 @@
                 font-size: 38px;
                 font-family: 'New Astro', sans-serif;
                 text-align: right;
+                padding-top: 10vh;
             }
             p {
                 font-size: 18px; 
@@ -261,6 +295,7 @@
             }
             img {
                 @include tamanio(90%,auto); 
+                
             }
         }
     }
@@ -284,7 +319,7 @@
 .seccion-fabricas {
     @include tamanio(100%,auto);
     text-align: center;
-    margin-top: 4vh;
+    margin-top: 35vh;
     .posicion-fabricas {
         padding-top: 15vh;
     }
