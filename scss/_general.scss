@@ -11,38 +11,8 @@ html {
     height: 100%;
     
 }
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-color: $color-1;
-    min-height: 100vh;
-    font-weight: 200; 
-    font-style: normal;
-}
-h1 {
-    
-}
-h2, h3 {
-    text-align: left;
-    /* background-color: rgb(44, 45, 45); */
-    color: $color-3;
-    font-size: 1.2em;
-    /* Fonts de los h2*/
-    
-    font-weight: 400;
-    font-style:normal;
-}
-p {
-}
-button {
-    color: $color-3;
-    background-color: $color-2;
-    /* Fonts de los botones*/
-    font-family: "New Amsterdam", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
+
+
 a {
     color: $color-3;
     text-decoration: none;    /*quita subrrayado*/

@@ -14,201 +14,270 @@
   font-style: normal;
 }
 /* Media query para mobile */
-@media (max-width: 768px) {
-  /*GENERAL*/
-  .seccion-somos {
-    width: 100%;
-    height: auto;
-  }
-  .seccion-somos .col-12 .card-body {
-    align-items: left;
-  }
-  .seccion-somos .col-12 .card-body .col-12 h1 {
-    font-size: 30px;
-    text-align: left;
-  }
-  .seccion-somos .col-12 .card-body .col-12 p {
-    font-size: 15px;
-    text-align: left;
-  }
-  .seccion-somos .col-12 .card-body .col-12 a {
-    font-size: 20px;
-    text-align: center;
-  }
-  .seccion-cards-info .row h2 {
-    width: 100%;
-    height: auto;
-    padding: 0;
-    font-size: 30px;
-    margin-bottom: 8vh;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  .seccion-cards-info .row .alineado-cards {
-    margin-bottom: 6vh;
-  }
-  .seccion-cards-info .row .alineado-cards img {
-    width: auto;
-    height: 10vh;
-  }
-  .seccion-cards-info .row .alineado-cards h3 {
-    font-size: 22px;
-  }
-  .seccion-cards-info .row .alineado-cards p {
-    font-size: 15px;
-  }
-  .seccion-presencia-mapa {
-    width: 100%;
-    height: auto;
-  }
-  .seccion-presencia-mapa .row .presencia-global h2 {
-    font-size: 30px;
-    margin-bottom: 40vh;
-  }
-  .seccion-presencia-mapa .row .presencia-global p {
-    font-size: 15px;
-    padding: 0;
-    margin: 0;
-    padding-left: 12%;
-    padding-right: 12%;
-  }
-  .seccion-presencia-mapa .row .presencia-proyectos {
-    width: 100%;
-    height: auto;
-    /* justify-content: space-around; */
-    padding-top: 10vh;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .seccion-presencia-mapa .row .presencia-proyectos .presencia {
-    width: 100%;
-    height: auto;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-bottom: 5vh;
-    text-align: center;
-    justify-items: center;
-  }
-  .seccion-presencia-mapa .row .presencia-proyectos .presencia h3 {
-    font-size: 30px;
-    text-align: center;
-  }
-  .seccion-presencia-mapa .row .presencia-proyectos .presencia p {
-    font-size: 15px;
-    text-align: center;
-  }
-  .seccion-presencia-mapa .row .presencia-proyectos .proyectos {
-    width: 100%;
-    height: auto;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-top: 0;
-    text-align: center;
-    justify-items: center;
-  }
-  .seccion-presencia-mapa .row .presencia-proyectos .proyectos h3 {
-    font-size: 30px;
-    text-align: center;
-  }
-  .seccion-presencia-mapa .row .presencia-proyectos .proyectos p {
-    font-size: 15px;
-    text-align: center;
-  }
-  .seccion-presencia-mapa .row .presencia-proyectos .proyectos button {
-    font-size: 15px;
-    margin-left: 0vh;
-    margin-right: 0;
-  }
-  .seccion-servicio-conoce {
-    /* background-image: url("/assets/elementos-home/imagen-madina.png");
-    background-size: cover;
-    background-position: center;
-    background-size: 100% 100%; */
-  }
-  .seccion-servicio-conoce .estilos-servicio .card .col-md-5 img {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    padding-left: 15%;
-    padding-right: 15%;
-  }
-  .seccion-servicio-conoce .estilos-servicio .card .col-md-7 .card-body {
-    text-align: center;
-  }
-  .seccion-servicio-conoce .estilos-servicio .card .col-md-7 .card-body h2 {
-    font-size: 30px;
-    text-align: center;
-  }
-  .seccion-servicio-conoce .estilos-servicio .card .col-md-7 .card-body p {
-    font-size: 15px;
-    text-align: center;
-  }
-  .seccion-servicio-conoce .estilos-servicio .card .col-md-7 .card-body button {
-    font-size: 15px;
-    text-align: center;
-  }
-  .seccion-servicio-conoce .estilos-conoce {
-    margin-top: 10vh;
-  }
-  .seccion-servicio-conoce .estilos-conoce .card .col-md-7 .card-body {
-    text-align: center;
-  }
-  .seccion-servicio-conoce .estilos-conoce .card .col-md-7 .card-body h2 {
-    font-size: 30px;
-    text-align: center;
-  }
-  .seccion-servicio-conoce .estilos-conoce .card .col-md-7 .card-body p {
-    font-size: 15px;
-    text-align: center;
-  }
-  .seccion-servicio-conoce .estilos-conoce .card .col-md-7 .card-body button {
-    font-size: 15px;
-    text-align: center;
-  }
-  .seccion-servicio-conoce .estilos-conoce .card .col-md-5 img {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    padding-left: 15%;
-    padding-right: 15%;
-  }
-  .seccion-fabricas {
-    width: 100%;
-    height: auto;
-  }
-  .seccion-fabricas .row .col .card .card-body h3 {
-    font-size: 30px;
-    text-align: center;
-  }
-  .seccion-fabricas .row .col .card .card-body img {
-    width: 70%;
-    height: auto;
-  }
-  .seccion-fabricas .row .col .card .card-body button {
-    font-size: 15px;
-    text-align: center;
-  }
-  .seccion-proyectos-destacados .row .row-12 h2 {
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 20vh;
-    font-size: 30px;
-    text-align: center;
-  }
-  .seccion-proyectos-destacados .row .col-lg-4 img {
-    padding-left: 15%;
-    padding-right: 15%;
-  }
-  .seccion-catalogo .card-body h3 {
-    font-size: 30px;
-    text-align: center;
-  }
-  .seccion-catalogo .card-body button {
-    font-size: 15px;
-  }
+@media (max-width: 576px) {
+  /*  .custum-styles {
+       border: solid 1px rgb(248, 9, 49);
+   } */
+  /*  .seccion-somos {
+       @include tamanio(100%,auto);
+       .col-12 {  
+           border: solid 1px rgb(248, 9, 49);
+           .card-body {
+
+               align-items: center;
+               .col-6 {
+                   @include tamanio(100%,auto);
+                   margin-right: 10%;
+                   h1 {
+
+                       font-size: 30px; 
+                       text-align: left;   
+
+                   }
+                   p {
+                       font-size: 10px;
+                       text-align: left;      
+                   }
+                   a {
+                       font-size: 20px;
+                       text-align: center;  
+                       margin-left: 35%;
+
+                   }
+               }  
+           }
+       }        
+   }
+
+   .seccion-cards-info {
+       .row {
+           h2 {
+               @include tamanio(100%,auto);
+               padding: 0;
+               font-size: 30px;
+               margin-bottom: 8vh;
+               padding-left: 5%;
+               padding-right: 5%;
+           }
+           .alineado-cards {
+               display: flex;
+               flex-direction: column;
+               margin-bottom: 6vh;
+               img {
+                   @include tamanio(auto,10vh);
+               }
+               h3 {
+                   font-size: 22px; 
+               }
+               p {
+                   font-size: 15px;
+               }
+           }
+       }
+
+   }
+
+   .seccion-presencia-mapa {
+       @include tamanio(100%,auto);     
+       .row {
+           img {
+
+           }
+           .presencia-global {
+               h2 {
+                   font-size: 30px;
+                   margin-bottom: 40vh;
+               }
+               p {
+                   font-size: 15px;
+                   padding: 0;
+                   margin: 0;
+                   padding-left: 12%;
+                   padding-right: 12%;
+               }
+           }
+           .presencia-proyectos {
+               @include tamanio(100%, auto);
+               padding-top: 10vh;
+               display: flex;
+               flex-direction: column;
+               text-align: center;
+               .presencia {
+                   @include tamanio(100%,auto);
+                   padding-left: 10%;
+                   padding-right: 10%;
+                   margin-bottom: 5vh;
+                   text-align: center;
+                   justify-items: center;
+                   h3 {
+                       font-size: 30px;
+                       text-align: center;
+                   }
+                   p {
+                       font-size: 15px;
+                       text-align: center;
+                   }
+               }
+               .proyectos {
+                   @include tamanio(100%,auto);
+                   padding-left: 10%;
+                   padding-right: 10%;
+                   margin-top: 0;
+                   text-align: center;
+                   justify-items: center;
+                   h3 {
+                       font-size: 30px;
+                       text-align: center;
+                   }
+                   p {
+                       font-size: 15px;
+                       text-align: center;
+                   }
+                   button {
+                       font-size: 15px;
+                       margin-left: 0vh;
+                       margin-right: 0;
+                   }
+               }
+           }
+       }
+
+   }
+
+   .seccion-servicio-conoce {
+
+       .estilos-servicio {  
+
+           .card {
+               .col-md-5 {
+                   img {
+                       @include tamanio(100%,auto);    
+                       margin: 0;
+                       padding: 0;
+                       padding-left: 15%;
+                       padding-right: 15%;
+                   }
+               }
+               .col-md-7 {
+                   .card-body {
+                       text-align: center;
+                       h2 {
+                           font-size: 30px;
+                           text-align: center;
+                       }
+                       p {
+                           font-size: 15px;
+                           text-align: center;
+                       }
+                       button {
+                           font-size: 15px;
+                           text-align: center;
+                       }
+                   }
+               }
+
+           }
+       }
+       .estilos-conoce {
+
+           margin-top: 10vh;
+           .card {
+               .col-md-7 { 
+                   .card-body {
+                       text-align: center;
+                       h2 {
+                           font-size: 30px;
+                           text-align: center;
+                       }
+                       p {
+                           font-size: 15px;
+                           text-align: center;
+                       }
+                       button {
+                           font-size: 15px;
+                           text-align: center;
+                       }
+                   }
+               }
+               .col-md-5 {
+                   img {
+                       @include tamanio(100%,auto);    
+                       margin: 0;
+                       padding: 0;
+                       padding-left: 15%;
+                       padding-right: 15%;
+
+
+                   }
+               }
+           }
+
+       }
+   }
+
+
+
+   .seccion-fabricas {
+       @include tamanio(100%,auto); 
+
+       .row {
+           .col {
+               .card {
+                   .card-body {
+                       h3 {
+                           font-size: 30px;
+                           text-align: center; 
+                       }
+                       img {
+                           @include tamanio(70%,auto);
+                       }
+                       button {
+                           font-size: 15px;
+                           text-align: center;
+                       }
+                   }
+               }
+           }
+       }
+   }
+
+   .seccion-proyectos-destacados {
+       .row {
+           .row-12 {
+               h2 {
+                   margin-left: 20%;
+                   margin-right: 20%;
+                   margin-top: 20vh;
+                   font-size: 30px;
+                   text-align: center; 
+               }
+           }
+           .col-lg-4 {
+               img {
+                   padding-left: 15%;
+                   padding-right: 15%;
+               }
+               h3 {
+
+               }
+               button {
+
+               }
+           }
+       }
+   }
+
+   .seccion-catalogo {
+       .card-body {
+           h3 {
+               font-size: 30px;
+               text-align: center;
+           }
+           button {
+               font-size: 15px;
+           }
+       }
+   } */
 }
 /*-----------------ESTILOS GENERALES----------------*/
 * {
@@ -221,35 +290,6 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: white;
-  min-height: 100vh;
-  font-weight: 200;
-  font-style: normal;
-}
-
-h2, h3 {
-  text-align: left;
-  /* background-color: rgb(44, 45, 45); */
-  color: rgb(184, 246, 231);
-  font-size: 1.2em;
-  /* Fonts de los h2*/
-  font-weight: 400;
-  font-style: normal;
-}
-
-button {
-  color: rgb(184, 246, 231);
-  background-color: rgb(210, 217, 232);
-  /* Fonts de los botones*/
-  font-family: "New Amsterdam", sans-serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 a {
@@ -368,24 +408,35 @@ footer {
   color: white;
   padding-top: 15vh;
   padding-left: 3%;
-  padding-right: 20%;
+  padding-right: 10%;
 }
-.seccion-somos .col-12 .card-body .col-12 h1 {
+.seccion-somos .col-12 .card-body .col-6 h1 {
   width: 100%;
   height: auto;
-  font-size: 45px;
+  /* font-size: 45px;  */
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   font-family: "New Astro", sans-serif;
 }
-.seccion-somos .col-12 .card-body .col-12 p {
-  /* @include tamanio(85vh,auto); */
-  font-size: 22px;
+.seccion-somos .col-12 .card-body .col-6 p {
+  /* font-size: 22px; */
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   font-family: "NeueHaasDisplay", sans-serif;
 }
-.seccion-somos .col-12 .card-body .col-12 a {
+.seccion-somos .col-12 .card-body .col-6 a {
   width: 30vh;
   height: auto;
   text-align: center;
-  font-size: 22px;
+  /* font-size: 22px; */
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   font-family: "NeueHaasDisplay", sans-serif;
   background-color: #D7BE0F;
   border-color: #D7BE0F;
@@ -407,10 +458,14 @@ footer {
 .seccion-cards-info h2 {
   color: black;
   text-align: center;
-  font-size: 40px;
+  /* font-size: 40px; */
+  font-size: 2.6125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   font-family: "New Astro", sans-serif;
-  padding-left: 20vh;
-  padding-right: 20vh;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .seccion-cards-info .alineado-cards {
   display: flex;
@@ -424,15 +479,23 @@ footer {
 }
 .seccion-cards-info .alineado-cards h3 {
   color: black;
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   font-family: "New Astro", sans-serif;
 }
 .seccion-cards-info .alineado-cards p {
   color: black;
-  width: 80%;
+  width: 100%;
   height: auto;
   text-align: center;
   font-family: "NeueHaasDisplay", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 /*--------------ESTILOS SECCION PRESENCIA/MAPA---------------*/
@@ -465,12 +528,19 @@ footer {
 .seccion-presencia-mapa .presencia-global h2 {
   color: black;
   text-align: center;
-  font-size: 40px;
+  /* font-size: 40px; */
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   font-family: "New Astro", sans-serif;
 }
 .seccion-presencia-mapa .presencia-global p {
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  /* font-size: 15px; */
   font-family: "NeueHaasDisplay", sans-serif;
   padding-left: 28%;
   padding-right: 28%;
@@ -479,7 +549,7 @@ footer {
   width: 100%;
   height: auto;
   justify-content: space-around;
-  padding-top: 80vh;
+  padding-top: 75vh;
   padding-bottom: 6vh;
   z-index: 2;
   display: flex;
@@ -491,44 +561,74 @@ footer {
   text-align: center;
 }
 .seccion-presencia-mapa .presencia-proyectos .presencia h3 {
-  width: 82%;
+  width: 100%;
   height: auto;
+  padding-left: 12%;
+  padding-right: 22%;
   color: #80A426;
-  font-size: 38px;
+  /* font-size: 38px; */
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   font-family: "New Astro", sans-serif;
   text-align: left;
 }
 .seccion-presencia-mapa .presencia-proyectos .presencia p {
-  width: 82%;
+  width: 100%;
   height: auto;
+  padding-left: 12%;
+  padding-right: 18%;
   text-align: left;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   font-family: "NeueHaasDisplay", sans-serif;
 }
 .seccion-presencia-mapa .presencia-proyectos .proyectos {
-  margin-top: 25vh;
+  margin-top: 20vh;
   text-align: center;
 }
 .seccion-presencia-mapa .presencia-proyectos .proyectos h3 {
-  width: 92%;
+  width: 100%;
   height: auto;
+  padding-left: 22%;
+  padding-right: 6%;
   color: #80A426;
-  font-size: 38px;
+  /* font-size: 38px; */
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   font-family: "New Astro", sans-serif;
   text-align: right;
 }
 .seccion-presencia-mapa .presencia-proyectos .proyectos p {
-  width: 90%;
+  width: 100%;
   height: auto;
+  padding-left: 20%;
+  padding-right: 6%;
   text-align: right;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   font-family: "NeueHaasDisplay", sans-serif;
 }
 .seccion-presencia-mapa .presencia-proyectos .proyectos button {
   background-color: #2A9A9A;
   border-color: #2A9A9A;
-  margin-left: 34vh;
-  font-size: 20px;
+  padding-left: 12%;
+  padding-right: 12%;
+  margin-left: 40%;
+  /* font-size: 20px; */
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   font-family: "NeueHaasDisplay", sans-serif;
 }
 .seccion-presencia-mapa .presencia-proyectos .proyectos .btn {
@@ -590,24 +690,36 @@ footer {
   box-shadow: none; /* Elimina las sombras predeterminadas si las hay */
 }
 .seccion-servicio-conoce .estilos-servicio .card img {
-  width: 90%;
+  width: 100%;
   height: auto;
   margin: 0;
   padding: 0;
 }
 .seccion-servicio-conoce .estilos-servicio .card h2 {
-  font-size: 38px;
+  /* font-size: 38px; */
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   font-family: "New Astro", sans-serif;
   padding-top: 10vh;
 }
 .seccion-servicio-conoce .estilos-servicio .card p {
-  font-size: 18px;
+  /* font-size: 18px; */
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   font-family: "NeueHaasDisplay", sans-serif;
 }
 .seccion-servicio-conoce .estilos-servicio .card button {
   width: 30%;
   height: auto;
-  font-size: 18px;
+  /* font-size: 18px; */
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   font-family: "NeueHaasDisplay", sans-serif;
   background-color: #D7BE0F;
   border-color: #D7BE0F;
@@ -627,25 +739,38 @@ footer {
   box-shadow: none; /* Elimina las sombras predeterminadas si las hay */
 }
 .seccion-servicio-conoce .estilos-conoce .card h2 {
-  font-size: 38px;
+  /* font-size: 38px; */
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   font-family: "New Astro", sans-serif;
   text-align: right;
   padding-top: 10vh;
 }
 .seccion-servicio-conoce .estilos-conoce .card p {
-  font-size: 18px;
+  padding-left: 5%;
+  /* font-size: 18px;  */
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   font-family: "NeueHaasDisplay", sans-serif;
 }
 .seccion-servicio-conoce .estilos-conoce .card button {
   width: 30%;
   height: auto;
-  font-size: 18px;
+  /* font-size: 18px; */
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   font-family: "NeueHaasDisplay", sans-serif;
   background-color: #D7BE0F;
   border-color: #D7BE0F;
 }
 .seccion-servicio-conoce .estilos-conoce .card img {
-  width: 90%;
+  width: 100%;
   height: auto;
 }
 .seccion-servicio-conoce .estilos-servicio .btn:hover,
@@ -663,7 +788,7 @@ footer {
   width: 100%;
   height: auto;
   text-align: center;
-  margin-top: 35vh;
+  margin-top: 10vh;
 }
 .seccion-fabricas .posicion-fabricas {
   padding-top: 15vh;
@@ -674,22 +799,30 @@ footer {
   box-shadow: none; /* Elimina las sombras predeterminadas si las hay */
 }
 .seccion-fabricas h3 {
-  font-size: 35px;
+  /* font-size: 35px; */
+  font-size: 2.66rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   font-family: "New Astro", sans-serif;
   text-align: center;
 }
 .seccion-fabricas img {
-  width: 70%;
+  width: 100%;
   height: auto;
 }
 .seccion-fabricas button {
-  width: 60%;
+  width: 70%;
   height: auto;
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   font-family: "NeueHaasDisplay", sans-serif;
   background-color: #D7BE0F;
   border-color: #D7BE0F;
-  margin-top: 1vh;
+  margin-top: 3vh;
 }
 
 /* Estilo por defecto para los botones dentro de la sección seccion-fabricas */
@@ -719,7 +852,11 @@ footer {
   padding-bottom: 5vh;
 }
 .seccion-proyectos-destacados h2 {
-  font-size: 38px;
+  /* font-size: 38px; */
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   font-family: "New Astro", sans-serif;
   text-align: center;
   color: black;
@@ -729,30 +866,40 @@ footer {
   display: flex;
   justify-content: center;
 }
-.seccion-proyectos-destacados .row .col-lg-4 {
-  margin-bottom: 2vh;
-  margin-top: 2vh;
-}
 .seccion-proyectos-destacados .row .col-lg-4 img {
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 .seccion-proyectos-destacados .row .col-lg-4 h3 {
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: 2.6125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   font-family: "New Astro", sans-serif;
   text-align: center;
   color: black;
-  margin-left: 10vh;
-  margin-right: 10vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
 }
 .seccion-proyectos-destacados .row .col-lg-4 h4 {
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   font-family: "NeueHaasDisplay", sans-serif;
   text-align: center;
   color: black;
 }
 .seccion-proyectos-destacados .row .col-lg-4 button {
+  width: 70%;
+  height: auto;
   font-family: "NeueHaasDisplay", sans-serif;
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   background-color: #D7BE0F;
   border-color: #D7BE0F;
   margin-top: 1vh;
@@ -784,7 +931,11 @@ footer {
   border-radius: 20px; /* Ajusta el valor para el radio de la curva */
 }
 .seccion-catalogo h3 {
-  font-size: 30px;
+  /* font-size: 30px; */
+  font-size: 2.8125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   font-family: "New Astro", sans-serif;
   text-align: center;
   color: black;
@@ -792,6 +943,10 @@ footer {
 }
 .seccion-catalogo button {
   font-family: "NeueHaasDisplay", sans-serif;
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
   background-color: #D7BE0F;
   border-color: #D7BE0F;
   margin-top: 1vh;

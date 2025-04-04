@@ -23,22 +23,33 @@
             color: white;
             padding-top: 15vh;
             padding-left: 3%;
-            padding-right: 20%;
-            .col-12 {
+            padding-right: 10%;
+            .col-6 {
                 h1 {
                     @include tamanio(100%,auto);
-                    font-size: 45px; 
+                    /* font-size: 45px;  */
+                    font-size: 3.125rem;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
                     font-family: 'New Astro', sans-serif;
                 }
                 p {
-                    /* @include tamanio(85vh,auto); */
-                    font-size: 22px;
+                    /* font-size: 22px; */
+                    font-size: 1.5625rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
                     font-family: 'NeueHaasDisplay', sans-serif;
                 }
                 a {
                     @include tamanio(30vh,auto);
                     text-align: center;
-                    font-size: 22px;
+                    /* font-size: 22px; */
+                    font-size: 1.5625rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
                     font-family: 'NeueHaasDisplay', sans-serif;
                     background-color: #D7BE0F;
                     border-color: #D7BE0F;
@@ -64,10 +75,14 @@
     h2 {
         color: black;
         text-align: center;
-        font-size: 40px;
+        /* font-size: 40px; */
+        font-size: 2.6125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
         font-family: 'New Astro', sans-serif;
-        padding-left: 20vh;
-        padding-right: 20vh;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     .alineado-cards {
         display: flex;
@@ -79,14 +94,22 @@
         }
         h3 {
             color: black;
-            font-size: 30px;
+            /* font-size: 30px; */
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
             font-family: 'New Astro', sans-serif;
         }
         p {
             color: black;
-            @include tamanio(80%,auto);
+            @include tamanio(100%,auto);
             text-align: center;
             font-family: 'NeueHaasDisplay', sans-serif;
+            font-size: 1.25rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
         }
     }
 }
@@ -114,16 +137,26 @@
         position: relative;
         z-index: 2; /* Asegura que el contenido de .presencia-global quede por encima de la imagen de fondo */
         padding-top: 5vh;
+
         h2 {
             color: black;
             text-align: center;
-            font-size: 40px;
+            /* font-size: 40px; */
+
+            font-size: 3.125rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
             font-family: 'New Astro', sans-serif;
         }
 
         p {
-            font-size: 15px;
-            font-weight: bold;
+            font-size: 1.5625rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            /* font-size: 15px; */
             font-family: 'NeueHaasDisplay', sans-serif;
             padding-left: 28%;
             padding-right: 28%;   
@@ -132,7 +165,7 @@
     .presencia-proyectos {
         @include tamanio(100%, auto);
         justify-content: space-around;
-        padding-top: 80vh;
+        padding-top: 75vh;
         padding-bottom: 6vh;
         z-index: 2;
         display: flex;
@@ -140,43 +173,73 @@
         .presencia {
             text-align: center;
             h3 {
-                @include tamanio(82%, auto);
+                @include tamanio(100%, auto);
+                padding-left: 12%;
+                padding-right: 22%;
                 color: #80A426;
-                font-size: 38px;
+                /* font-size: 38px; */
+                font-size: 3.125rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
                 font-family: 'New Astro', sans-serif;
                 text-align: left;
             }
             p {
-                @include tamanio(82%, auto); 
+                @include tamanio(100%, auto); 
+                padding-left: 12%;
+                padding-right: 18%;
                 text-align: left;
-                font-size: 20px;
+                /* font-size: 20px; */
+                font-size: 1.5625rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
                 font-family: 'NeueHaasDisplay', sans-serif;
             }
         }
 
         .proyectos {
-            margin-top: 25vh;
+            margin-top: 20vh;
             text-align: center;
             h3 {
-                @include tamanio(92%, auto);
+                @include tamanio(100%, auto);
+                padding-left: 22%;
+                padding-right: 6%;
                 color: #80A426;
-                font-size: 38px;
+                /* font-size: 38px; */
+                font-size: 3.125rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
                 font-family: 'New Astro', sans-serif;
                 text-align: right;
             }
 
             p {
-                @include tamanio(90%, auto);
+                @include tamanio(100%, auto);
+                padding-left: 20%;
+                padding-right: 6%;
                 text-align: right;
-                font-size: 20px;
+                /* font-size: 20px; */
+                font-size: 1.5625rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
                 font-family: 'NeueHaasDisplay', sans-serif;
             }
 
             button {
                 background-color: #2A9A9A;
                 border-color: #2A9A9A;
-                margin-left: 34vh;
-                font-size: 20px;
+                padding-left: 12%;
+                padding-right: 12%;
+                margin-left: 40%;
+                /* font-size: 20px; */
+                font-size: 1.5625rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
                 font-family: 'NeueHaasDisplay', sans-serif;
             }
         }
@@ -227,7 +290,6 @@
 
         }
     }
-    
 
     .estilos-servicio {
         @include tamanio(100%,auto); 
@@ -240,22 +302,34 @@
             border: none; /* Elimina cualquier borde sólido de la tarjeta */
             box-shadow: none; /* Elimina las sombras predeterminadas si las hay */
             img {
-                @include tamanio(90%,auto);    
+                @include tamanio(100%,auto);    
                 margin: 0;
                 padding: 0;
             }
             h2 {
-                font-size: 38px;
+                /* font-size: 38px; */
+                font-size: 3.125rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
                 font-family: 'New Astro', sans-serif;
                 padding-top: 10vh;
             }
             p {
-                font-size: 18px;
+                /* font-size: 18px; */
+                font-size: 1.5625rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
                 font-family: 'NeueHaasDisplay', sans-serif;
             }
             button {
                 @include tamanio(30%,auto);
-                font-size: 18px;
+                /* font-size: 18px; */
+                font-size: 1.5625rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
                 font-family: 'NeueHaasDisplay', sans-serif;
                 background-color: #D7BE0F;
                 border-color: #D7BE0F;
@@ -277,25 +351,37 @@
             border: none; /* Elimina cualquier borde sólido de la tarjeta */
             box-shadow: none; /* Elimina las sombras predeterminadas si las hay */
             h2 {
-                font-size: 38px;
+                /* font-size: 38px; */
+                font-size: 3.125rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
                 font-family: 'New Astro', sans-serif;
                 text-align: right;
                 padding-top: 10vh;
             }
             p {
-                font-size: 18px; 
+                padding-left: 5%;
+                /* font-size: 18px;  */
+                font-size: 1.5625rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
                 font-family: 'NeueHaasDisplay', sans-serif;
             }
             button {
                 @include tamanio(30%,auto); 
-                font-size: 18px;
+                /* font-size: 18px; */
+                font-size: 1.5625rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
                 font-family: 'NeueHaasDisplay', sans-serif;
                 background-color: #D7BE0F; 
                 border-color: #D7BE0F;
             }
             img {
-                @include tamanio(90%,auto); 
-                
+                @include tamanio(100%,auto);   
             }
         }
     }
@@ -319,30 +405,40 @@
 .seccion-fabricas {
     @include tamanio(100%,auto);
     text-align: center;
-    margin-top: 35vh;
+    margin-top: 10vh;
     .posicion-fabricas {
         padding-top: 15vh;
     }
     .card {
+        
         background: transparent; /* Hace el fondo de las tarjetas transparente */
         border: none; /* Elimina cualquier borde sólido de la tarjeta */
         box-shadow: none; /* Elimina las sombras predeterminadas si las hay */
     }
     h3 {
-        font-size: 35px;
+        /* font-size: 35px; */
+        font-size: 2.66rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
         font-family: 'New Astro', sans-serif;
         text-align: center;
+
     }
     img {
-        @include tamanio(70%,auto);
+        @include tamanio(100%,auto);
     }
     button {
-        @include tamanio(60%,auto); 
-        font-size: 20px;
+        @include tamanio(70%,auto); 
+        /* font-size: 20px; */
+        font-size: 1.5625rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
         font-family: 'NeueHaasDisplay', sans-serif;
         background-color: #D7BE0F; 
         border-color: #D7BE0F;
-        margin-top: 1vh; 
+        margin-top: 3vh; 
     }
 }
 /* Estilo por defecto para los botones dentro de la sección seccion-fabricas */
@@ -372,7 +468,11 @@
     margin-bottom: 10vh;
     padding-bottom: 5vh;
     h2 { 
-        font-size: 38px;
+        /* font-size: 38px; */
+        font-size: 3.125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
         font-family: 'New Astro', sans-serif;
         text-align: center;
         color: black;
@@ -382,27 +482,39 @@
         display: flex;
         justify-content: center;
         .col-lg-4 {
-            margin-bottom: 2vh;
-            margin-top: 2vh;  
             img {
-                @include tamanio(80%,auto); 
+                @include tamanio(100%,auto); 
             }
             h3 {
-                font-size: 30px;
+                /* font-size: 30px; */
+                font-size: 2.6125rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
                 font-family: 'New Astro', sans-serif;
                 text-align: center; 
                 color: black;
-                margin-left: 10vh;
-                margin-right: 10vh;
+                margin-left: 2vh;
+                margin-right: 2vh;
             }
             h4 {
-                font-size: 20px;
+                /* font-size: 20px; */
+                font-size: 1.5625rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
                 font-family: 'NeueHaasDisplay', sans-serif;
                 text-align: center; 
                 color: black;    
             }
             button {
+                @include tamanio(70%,auto); 
+                
                 font-family: 'NeueHaasDisplay', sans-serif;
+                font-size: 1.5625rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
                 background-color: #D7BE0F; 
                 border-color: #D7BE0F;
                 margin-top: 1vh; 
@@ -438,7 +550,11 @@
     border-radius: 20px; /* Ajusta el valor para el radio de la curva */
    
     h3 {
-        font-size: 30px;
+        /* font-size: 30px; */
+        font-size: 2.8125rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
         font-family: 'New Astro', sans-serif;
         text-align: center; 
         color: black;
@@ -446,6 +562,10 @@
     }
     button {
         font-family: 'NeueHaasDisplay', sans-serif;
+        font-size: 1.5625rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
         background-color: #D7BE0F; 
         border-color: #D7BE0F;
         margin-top: 1vh; 
