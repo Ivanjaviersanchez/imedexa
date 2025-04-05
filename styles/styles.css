@@ -523,7 +523,7 @@ footer {
   text-align: center;
   position: relative;
   z-index: 2; /* Asegura que el contenido de .presencia-global quede por encima de la imagen de fondo */
-  padding-top: 5vh;
+  padding-top: 7vh;
 }
 .seccion-presencia-mapa .presencia-global h2 {
   color: black;
@@ -549,7 +549,7 @@ footer {
   width: 100%;
   height: auto;
   justify-content: space-around;
-  padding-top: 75vh;
+  padding-top: 84vh;
   padding-bottom: 6vh;
   z-index: 2;
   display: flex;
@@ -588,7 +588,7 @@ footer {
   font-family: "NeueHaasDisplay", sans-serif;
 }
 .seccion-presencia-mapa .presencia-proyectos .proyectos {
-  margin-top: 20vh;
+  margin-top: 22vh;
   text-align: center;
 }
 .seccion-presencia-mapa .presencia-proyectos .proyectos h3 {
@@ -621,8 +621,8 @@ footer {
 .seccion-presencia-mapa .presencia-proyectos .proyectos button {
   background-color: #2A9A9A;
   border-color: #2A9A9A;
-  padding-left: 12%;
-  padding-right: 12%;
+  padding-left: 10%;
+  padding-right: 10%;
   margin-left: 40%;
   /* font-size: 20px; */
   font-size: 1.5625rem;

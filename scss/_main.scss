@@ -136,18 +136,16 @@
         text-align: center;
         position: relative;
         z-index: 2; /* Asegura que el contenido de .presencia-global quede por encima de la imagen de fondo */
-        padding-top: 5vh;
+        padding-top: 7vh;
 
         h2 {
             color: black;
             text-align: center;
             /* font-size: 40px; */
-
             font-size: 3.125rem;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
-
             font-family: 'New Astro', sans-serif;
         }
 
@@ -165,7 +163,7 @@
     .presencia-proyectos {
         @include tamanio(100%, auto);
         justify-content: space-around;
-        padding-top: 75vh;
+        padding-top: 84vh;
         padding-bottom: 6vh;
         z-index: 2;
         display: flex;
@@ -200,7 +198,7 @@
         }
 
         .proyectos {
-            margin-top: 20vh;
+            margin-top: 22vh;
             text-align: center;
             h3 {
                 @include tamanio(100%, auto);
@@ -232,8 +230,8 @@
             button {
                 background-color: #2A9A9A;
                 border-color: #2A9A9A;
-                padding-left: 12%;
-                padding-right: 12%;
+                padding-left: 10%;
+                padding-right: 10%;
                 margin-left: 40%;
                 /* font-size: 20px; */
                 font-size: 1.5625rem;
